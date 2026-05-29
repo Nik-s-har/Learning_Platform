@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 24px;
+    height: 64px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menuList {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.menuItem {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.menuItem:hover {
+  color: var(--base-color);
+}
+
+.menuItem a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menuItem a:global(.active) {
+  color: var(--base-color);
+}

@@ -1,0 +1,98 @@
+/* ===== CSS Reset / Normalize ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  font-size: 16px;
+  font-family: var(--font-nunito);
+}
+
+
+/* ===== Базовые стили ===== */
+
+body {
+  background: white;
+}
+
+/* ===== Типографика =====  */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  color: var(--text-color);
+}
+
+/* ===== Ссылки ===== 
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Кнопки ===== 
+
+button {
+  font: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* ===== Изображения ===== 
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== Скроллбар (опционально) ===== 
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 6px;
+}
+
+/* ===== Выделение текста ===== 
+
+::selection {
+  background: var(--color-primary);
+  color: white;
+} */

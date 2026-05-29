@@ -1,0 +1,29 @@
+.main {
+    background-color: var(--bg-sky-color);
+    padding-block: 32px 80px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 864px;
+    margin-block-end: 32px;
+    margin-inline: auto;
+}
+
+.header nav {
+    font-weight: 700;
+}
+
+.lessonTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.lessonTitle span {
+    color: var(--base-color);
+    font-size: 12px;
+    font-weight: 900;
+}

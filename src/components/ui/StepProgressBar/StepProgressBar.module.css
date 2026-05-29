@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.step {
+    width: 48px;
+    height: 12px;
+    border-radius: 6px;
+}
+
+.stepUndone {
+    background-color: var(--color-slate-200);
+    border-color: var(--color-slate-200);
+}
+
+.stepDone {
+    background-color: var(--base-color);
+    border-color: var(--base-color);
+}
+

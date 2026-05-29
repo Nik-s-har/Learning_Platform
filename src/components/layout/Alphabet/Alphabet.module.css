@@ -1,0 +1,19 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-sky-500);
+    padding-block: 96px;
+}
+
+.layout h2, .layout p {
+    color: white;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}

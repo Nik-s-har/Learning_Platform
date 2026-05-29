@@ -1,0 +1,53 @@
+.container {
+    background-color: var(--bg-sky-color);
+}
+
+.content {
+    /* background-color: var(--bg-sky-color); */
+    max-width: 880px;
+    margin-inline: auto;
+    padding-block: 48px;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    padding-block-start: 100px;
+    padding-inline: 100px;
+    margin-block-end: 64px;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    aspect-ratio: 1;
+    border: 1px solid var(--accent-color);
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+
+.header h2 {
+    margin-block-end: 16px;
+}
+
+.alphabetRoadmap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+}
+
+.alphabetRoadmap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 8px dashed var(--color-sky-200);
+}

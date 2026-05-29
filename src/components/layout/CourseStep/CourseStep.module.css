@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.emptyBlock {
+    width: 384px;
+    height: 0px;
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}

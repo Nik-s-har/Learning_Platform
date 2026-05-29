@@ -1,0 +1,49 @@
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.badge {
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 50%;
+    width: 48px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whiteNumber {
+    color: white;
+}
+
+.slateNumber {
+    color: var(--color-slate-400)
+}
+
+.bgSlate {
+    background-color: var(--color-slate-200);
+    border-color: white;
+}
+
+.bgSky {
+    background-color: var(--color-sky-500);
+    border-color: var(--color-sky-200);
+}
+
+.bgGreen {
+    background-color: var(--color-green-500);
+    border-color: var(--color-green-200);
+}
+
+.pulse {
+    animation: pulse 1.5s infinite;
+}

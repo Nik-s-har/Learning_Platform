@@ -1,0 +1,92 @@
+/* Button.module.css */
+.button {
+  /* border-: none; */
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Варианты кнопки */
+.primary {
+  border-radius: 16px;
+  padding-block: 16px;
+  padding-inline: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+/* .primary:hover:not(:disabled) {
+  background-color: #1e40af;
+} */
+
+.secondary {
+  border-radius: 60px;
+  padding-block: 8px;
+  padding-inline: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* .secondary:hover:not(:disabled) {
+  background-color: #d1d5db;
+}*/
+
+.cardButton {
+  border-radius: 16px;
+  padding-block: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+
+.blueWhite {
+  background-color: var(--base-color);
+  color: white;
+  border-color: var(--base-color);
+}
+
+.whiteBlack {
+  background-color: white;
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.yellowBlack {
+  background-color: var(--accent-color);
+  color: black;
+  border-color: var(--accent-color);
+}
+
+.greyBlue {
+  background-color: var(--color-sky-100);
+  color: var(--text-button-color);
+  border-color: var(--color-sky-100);
+}
+
+.slateSlate {
+  background-color: var(--color-slate-200);
+  color: var(--color-slate-400);
+  border-color: var(--color-slate-200);
+}
+
+.greenWhite {
+  background-color: var(--color-green-500);
+  color: white;
+  border-color: var(--color-green-500);
+}
