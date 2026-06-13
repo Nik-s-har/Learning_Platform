@@ -33,6 +33,7 @@
       "@alphabet/*": ["./src/courses/alphabet/*"],
       "@styles/*": ["./src/styles/*"],
       "@lib/*": ["./src/lib/*"],
+      "@utils/*": ["./src/utils/*"],
     }
   },
   "include": ["src"]

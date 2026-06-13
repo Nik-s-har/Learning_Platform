@@ -6,10 +6,7 @@ import { alphabetCourseData } from '@alphabet/data/alphabetLessons';
 function AlphabetLesson() {
   const { lessonId } = useParams<{ lessonId: string }>();
   const lessonIdNum = Number(lessonId);
-  const lessonData = alphabetCourseData.find(
-    (item) => item.id === lessonIdNum,
-  );
-
+  const lessonData = alphabetCourseData.find((item) => item.id === lessonIdNum);
   const [currentStep, setCurrentStep] = useState(0);
   const [stepState, setStepState] = useState<boolean[]>(
     Array(lessonData?.steps?.length ?? 0).fill(false),

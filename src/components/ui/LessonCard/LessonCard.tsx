@@ -1,4 +1,4 @@
-import type { ComponentType, useContext } from 'react';
+import type { ComponentType } from 'react';
 import clsx from 'clsx';
 import { Lock, LockOpen, CircleCheck } from 'lucide-react';
 import styles from './LessonCard.module.css';

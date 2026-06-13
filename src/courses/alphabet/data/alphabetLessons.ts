@@ -1,4 +1,5 @@
 import type { CourseData } from '@app-types/lesson';
+import { mediaUrl } from '@utils/media';
 import Tort from '@assets/pictures/tort-48x64.png';
 
 export const alphabetCourseData: CourseData = [
@@ -10,7 +11,7 @@ export const alphabetCourseData: CourseData = [
     steps: [
       {
         type: 'video',
-        src: '/courses/alphabet/video/ABCD.mp4',
+        src: mediaUrl('courses/spotlite/alphabet/video/ABCD.mp4'),
         aboutLesson: '...',
       },
       {

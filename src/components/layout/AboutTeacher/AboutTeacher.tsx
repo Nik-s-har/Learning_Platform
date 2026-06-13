@@ -1,6 +1,5 @@
 import styles from './AboutTeacher.module.css';
-import { Smile, GraduationCap, Trophy } from 'lucide-react';
-import foto from '@assets/pictures/image.png';
+import foto from '@assets/pictures/tutor.jpg';
 
 function AboutTeacher() {
   return (
@@ -11,35 +10,20 @@ function AboutTeacher() {
         </div>
       </div>
       <article className={styles.infoArea}>
-        <h2>
-          Почему учиться со мной — это{' '}
-          <span className={styles.accentText}>здорово?</span>
-        </h2>
+        <h2>Методика, которой можно доверять</h2>
         <p className={styles.infoText}>
-          Я создала этот проект, чтобы показать: изучение иностранного языка не
-          должно быть скучным уроком за партой. Моя методика основана на
-          любознательности детей и игровом подходе.
+          Меня зовут Харитонова Ольга Владимировна. Я - учитель английского
+          языка с более чем 20-летним опытом работы и квалификацией
+          нейропедагога.
         </p>
-        <ul>
-          <li className={styles.liItem}>
-            <div className={styles.marker}>
-              <Smile />
-            </div>
-            <span>Индивидуальный подход к каждому ребенку</span>
-          </li>
-          <li className={styles.liItem}>
-            <div className={styles.marker}>
-              <GraduationCap />
-            </div>
-            <span>Методика одобренная ведущими лингвистами</span>
-          </li>
-          <li className={styles.liItem}>
-            <div className={styles.marker}>
-              <Trophy />
-            </div>
-            <span>Система мотивации: собирай стикеры и получай призы</span>
-          </li>
-        </ul>
+        <p className={styles.infoText}>
+          В основе моей программы — современные методики обучения, многолетняя
+          педагогическая практика и понимание того, как дети лучше усваивают
+          информацию. Благодаря этому ребёнок не просто заучивает правила, а
+          действительно понимает материал, быстрее запоминает новые темы,
+          уверенно осваивает школьную программу и применяет полученные знания на
+          уроках и при выполнении домашних заданий.
+        </p>
       </article>
     </section>
   );
