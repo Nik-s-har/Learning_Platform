@@ -16,6 +16,10 @@
     font-weight: 700;
 }
 
+.header h3 {
+    color: var(--base-color);
+}
+
 .lessonTitle {
     display: flex;
     flex-direction: column;

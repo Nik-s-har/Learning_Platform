@@ -6,7 +6,6 @@ import styles from './Lesson.module.css';
 
 export interface LessonProps {
   lessonId: number;
-  title: string;
   stepState: boolean[];
   type: 'video' | 'exercise';
   src: string;
@@ -15,8 +14,7 @@ export interface LessonProps {
 }
 
 function Lesson(props: LessonProps) {
-  const { lessonId, title, stepState, type, src, aboutLesson, onComplete } =
-    props;
+  const { lessonId, stepState, type, src, aboutLesson, onComplete } = props;
 
   const lessonContent: Record<LessonProps['type'], ReactElement> = {
     video: (
@@ -26,7 +24,13 @@ function Lesson(props: LessonProps) {
         onComplete={onComplete}
       />
     ),
-    exercise: <ExerciseLesson exerciseSrc={src} onComplete={onComplete} />,
+    exercise: (
+      <ExerciseLesson
+        exerciseSrc={src}
+        aboutLesson={aboutLesson}
+        onComplete={onComplete}
+      />
+    ),
   };
 
   return (
@@ -34,10 +38,7 @@ function Lesson(props: LessonProps) {
       <header className={styles.header}>
         <nav>Назад к карте</nav>
         <StepProgressBar stepState={stepState} />
-        <div className={styles.lessonTitle}>
-          <span>Урок {lessonId}</span>
-          <h3>{title}</h3>
-        </div>
+        <h3>Урок {lessonId}</h3>
       </header>
       {lessonContent[type]}
     </main>

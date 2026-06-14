@@ -14,7 +14,7 @@ function AlphabetLesson() {
 
   if (!lessonData) return null;
 
-  const { title, steps } = lessonData;
+  const { steps } = lessonData;
 
   if (!steps || steps.length === 0) return null;
 
@@ -34,7 +34,6 @@ function AlphabetLesson() {
   return (
     <Lesson
       lessonId={lessonIdNum}
-      title={title}
       stepState={stepState}
       type={type}
       src={src}

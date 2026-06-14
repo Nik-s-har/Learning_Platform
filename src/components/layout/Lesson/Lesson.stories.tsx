@@ -41,7 +41,6 @@ type Story = StoryObj<LessonProps>;
 export const VideoStep: Story = {
   args: {
     lessonId: lesson.id,
-    title: lesson.content,
     stepState,
     type: videoStep.type,
     src: videoFile,
@@ -52,7 +51,6 @@ export const VideoStep: Story = {
 export const ExerciseStep: Story = {
   args: {
     lessonId: lesson.id,
-    title: lesson.content,
     stepState,
     type: exerciseStep.type,
     src: exerciseStep.src,
