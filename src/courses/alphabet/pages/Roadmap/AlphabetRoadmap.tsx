@@ -1,10 +1,16 @@
-import { useNavigate } from 'react-router';
+import { useNavigate, useParams, Navigate } from 'react-router-dom';
 import AlphabetStep from '@layout/CourseStep';
-import { alphabetCourseData } from '@alphabet/data/alphabetLessons';
+import { alphabetTextbooks, isTextbookSlug } from '@alphabet/data';
 import styles from './AlphabetRoadmap.module.css';
 
 export function AlphabetRoadmap() {
   const navigate = useNavigate();
+  const { textbook } = useParams<{ textbook: string }>();
+
+  if (!isTextbookSlug(textbook)) return <Navigate to="/" replace />;
+
+  const { data } = alphabetTextbooks[textbook];
+
   return (
     <main className={styles.conteiner}>
       <div className={styles.content}>
@@ -16,12 +22,14 @@ export function AlphabetRoadmap() {
           </p>
         </section>
         <section className={styles.alphabetRoadmap}>
-          {alphabetCourseData.map((lesson) => (
+          {data.map((lesson) => (
             <AlphabetStep
               key={lesson.id}
               lesson={lesson}
               status="unlock"
-              onStart={() => navigate(`/alphabet/lesson/${lesson.id}`)}
+              onStart={() =>
+                navigate(`/alphabet/${textbook}/lesson/${lesson.id}`)
+              }
             />
           ))}
         </section>

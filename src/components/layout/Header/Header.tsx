@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '@context/AuthContext';
+import { alphabetTextbooks } from '@alphabet/data';
 import styles from './Header.module.css';
 import Logo from '@assets/pictures/logo.png';
 import Button from '@ui/button';
@@ -24,9 +25,11 @@ function Header() {
           <li className={styles.menuItem}>
             <NavLink to="/">Главная</NavLink>
           </li>
-          <li className={styles.menuItem}>
-            <NavLink to="/alphabet">Курс Алфавит</NavLink>
-          </li>
+          {Object.entries(alphabetTextbooks).map(([slug, { menuLabel }]) => (
+            <li key={slug} className={styles.menuItem}>
+              <NavLink to={`/alphabet/${slug}`}>{menuLabel}</NavLink>
+            </li>
+          ))}
           <li className={styles.menuItem}>Блог</li>
         </ul>
       </nav>
