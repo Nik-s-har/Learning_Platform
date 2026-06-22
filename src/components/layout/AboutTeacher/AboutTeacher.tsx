@@ -1,5 +1,5 @@
 import styles from './AboutTeacher.module.css';
-import foto from '@assets/pictures/tutor.jpg';
+import foto from '@assets/pictures/My photo (3).png';
 
 function AboutTeacher() {
   return (

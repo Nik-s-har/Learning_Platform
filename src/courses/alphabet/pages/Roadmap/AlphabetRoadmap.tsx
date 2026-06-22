@@ -15,10 +15,9 @@ export function AlphabetRoadmap() {
     <main className={styles.conteiner}>
       <div className={styles.content}>
         <section className={styles.header}>
-          <h2>Карта приключений</h2>
+          <h2>Карта уроков</h2>
           <p>
-            Пройди все 7 уроков, чтобы выучить английский алфавит и собрать
-            коллекцию стикеров!
+            Скачай рабочую тетрадь и начинай заниматься
           </p>
         </section>
         <section className={styles.alphabetRoadmap}>

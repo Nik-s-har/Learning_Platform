@@ -6,9 +6,10 @@ export interface VideoLessonProps {
   videoSrc: string;
   aboutLesson: string;
   onComplete?: () => void;
+  submitLabel?: string;
 }
 
-function VideoLesson({ videoSrc, aboutLesson, onComplete }: VideoLessonProps) {
+function VideoLesson({ videoSrc, aboutLesson, onComplete, submitLabel }: VideoLessonProps) {
   return (
     <div className={styles.card}>
       <h3 className={styles.title}>
@@ -25,7 +26,7 @@ function VideoLesson({ videoSrc, aboutLesson, onComplete }: VideoLessonProps) {
       <p className={styles.description}>{aboutLesson}</p>
 
       <Button variant="primary" colorScheme="blueWhite" onClick={onComplete}>
-        Я посмотрел! Идем дальше →
+        {submitLabel ?? 'Я посмотрел! Идем дальше →'}
       </Button>
     </div>
   );
