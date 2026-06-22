@@ -20,6 +20,36 @@
     color: var(--base-color);
 }
 
+.lessonActions {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: 864px;
+    margin: 32px auto 0;
+    padding-inline: 8px;
+}
+
+.actionButton {
+    flex: 1;
+    min-width: 0;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 24px;
+    background-color: var(--base-color);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+    text-decoration: none;
+}
+
+.actionButton:hover,
+.actionButton:focus-visible {
+    transform: translateY(-1px);
+    background-color: #0f8ce0;
+}
+
 .lessonTitle {
     display: flex;
     flex-direction: column;

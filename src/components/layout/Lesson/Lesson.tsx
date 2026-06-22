@@ -1,4 +1,5 @@
 import { type ReactElement } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import StepProgressBar from '@ui/StepProgressBar';
 import VideoLesson from '@ui/VideoLesson';
 import ExerciseLesson from '@ui/ExerciseLesson';
@@ -7,14 +8,22 @@ import styles from './Lesson.module.css';
 export interface LessonProps {
   lessonId: number;
   stepState: boolean[];
+  activeStep?: number;
   type: 'video' | 'exercise';
   src: string;
   aboutLesson: string;
   onComplete: () => void;
+  onSelectStep?: (stepIndex: number) => void;
+  onBack?: () => void;
+  courseMapHref?: string;
+  nextLessonHref?: string;
+  isLastStep?: boolean;
+  submitLabel?: string;
 }
 
 function Lesson(props: LessonProps) {
-  const { lessonId, stepState, type, src, aboutLesson, onComplete } = props;
+  const navigate = useNavigate();
+  const { lessonId, stepState, activeStep, type, src, aboutLesson, onComplete, onSelectStep, onBack, courseMapHref, nextLessonHref, isLastStep, submitLabel } = props;
 
   const lessonContent: Record<LessonProps['type'], ReactElement> = {
     video: (
@@ -22,6 +31,7 @@ function Lesson(props: LessonProps) {
         videoSrc={src}
         aboutLesson={aboutLesson}
         onComplete={onComplete}
+        submitLabel={submitLabel}
       />
     ),
     exercise: (
@@ -29,6 +39,7 @@ function Lesson(props: LessonProps) {
         exerciseSrc={src}
         aboutLesson={aboutLesson}
         onComplete={onComplete}
+        submitLabel={submitLabel}
       />
     ),
   };
@@ -36,11 +47,46 @@ function Lesson(props: LessonProps) {
   return (
     <main className={styles.main}>
       <header className={styles.header}>
-        <nav>Назад к карте</nav>
-        <StepProgressBar stepState={stepState} />
+        <nav
+          className={styles.backLink}
+          role="button"
+          tabIndex={0}
+          onClick={onBack ?? (() => navigate(-1))}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault();
+              (onBack ?? (() => navigate(-1)))();
+            }
+          }}
+        >
+          Назад к карте
+        </nav>
+        <StepProgressBar stepState={stepState} activeStep={activeStep} onSelectStep={onSelectStep} />
         <h3>Урок {lessonId}</h3>
       </header>
       {lessonContent[type]}
+      {isLastStep && (
+        <div className={styles.lessonActions}>
+          {courseMapHref ? (
+            <Link to={courseMapHref} className={styles.actionButton}>
+              К карте уроков
+            </Link>
+          ) : (
+            <button
+              type="button"
+              className={styles.actionButton}
+              onClick={onBack ?? (() => navigate(-1))}
+            >
+              К карте уроков
+            </button>
+          )}
+          {nextLessonHref && (
+            <Link to={nextLessonHref} className={styles.actionButton}>
+              Следующий урок →
+            </Link>
+          )}
+        </div>
+      )}
     </main>
   );
 }

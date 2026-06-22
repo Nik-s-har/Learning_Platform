@@ -1,4 +1,5 @@
 export type LessonStepData = {
+  title: string;
   type: 'video' | 'exercise';
   src: string;
   aboutLesson: string;

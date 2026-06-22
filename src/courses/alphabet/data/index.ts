@@ -11,11 +11,11 @@ export interface TextbookMeta {
 // starlight — существующие данные (alphabetLessons.ts), редактируются в другой ветке.
 export const alphabetTextbooks = {
   starlight: {
-    menuLabel: 'Алфавит Starlight',
+    menuLabel: 'Вводный курс к Starlight',
     data: alphabetCourseData,
   },
   spotlight: {
-    menuLabel: 'Алфавит Spotlight',
+    menuLabel: 'Вводный курс к Spotlight',
     data: spotlightLessons,
   },
 } satisfies Record<string, TextbookMeta>;
