@@ -27,8 +27,6 @@ export const alphabetCourseData: CourseData = [
         src: mediaUrl('courses/introduction/starlight/video/L1_ex2.mp4'),
         aboutLesson: 'Смотри видео и выполняй задания 1-3 в рабочей тетради',
       },
-      
-      
       {
         title: 'Упражнение 2',
         type: 'exercise',
@@ -79,7 +77,6 @@ export const alphabetCourseData: CourseData = [
         src: 'https://wordwall.net/embed/ba1ae68ff8ac45efba388806bc13743c?themeId=1&templateId=38&fontStackId=0',
         aboutLesson: 'Послушай и составь слово',
       },
-      
     ],
   },
   {
@@ -106,7 +103,6 @@ export const alphabetCourseData: CourseData = [
         src: mediaUrl('courses/introduction/starlight/video/L2_ex2.mp4'),
         aboutLesson: 'Смотри видео и выполняй задания 1-3 в рабочей тетради',
       },
-      
       {
         title: 'Упражнение 2',
         type: 'exercise',
@@ -148,9 +144,10 @@ export const alphabetCourseData: CourseData = [
         title: 'Упражнение 6',
         type: 'exercise',
         src: 'https://wordwall.net/embed/6b22656316e446b0818b9e6956677766?themeId=65&templateId=25&fontStackId=0',
-        aboutLesson: 'Найди пары рифмующихся слов. Выполни упражнение 7 в рабочей тетради',
+        aboutLesson:
+          'Найди пары рифмующихся слов. Выполни упражнение 7 в рабочей тетради',
       },
-    ]
+    ],
   },
   {
     id: 3,
@@ -164,7 +161,6 @@ export const alphabetCourseData: CourseData = [
         src: mediaUrl('courses/introduction/starlight/video/L3_ex1.mp4'),
         aboutLesson: 'Смотри видео и выполняй задания 1-3 в рабочей тетради',
       },
-      
       {
         title: 'Упражнение 1',
         type: 'exercise',
@@ -181,13 +177,15 @@ export const alphabetCourseData: CourseData = [
         title: 'Упражнение 3',
         type: 'exercise',
         src: 'https://wordwall.net/embed/baf5153fca9f45c7813003e654fc5f1a?themeId=55&templateId=71&fontStackId=0',
-        aboutLesson: 'Собери в каждый сундук монеты с соответствующими строчными буквами ',
+        aboutLesson:
+          'Собери в каждый сундук монеты с соответствующими строчными буквами ',
       },
       {
         title: 'Упражнение 4',
         type: 'exercise',
         src: 'https://wordwall.net/embed/aaf96990533a4bb59cf5d3e3e3657de8?themeId=46&templateId=48&fontStackId=0',
-        aboutLesson: 'Направляй самолётик к облакам с правильными буквами. Не задевай неправильные',
+        aboutLesson:
+          'Направляй самолётик к облакам с правильными буквами. Не задевай неправильные',
       },
       {
         title: 'Видео 2',
@@ -200,22 +198,24 @@ export const alphabetCourseData: CourseData = [
         title: 'Упражнение 5',
         type: 'exercise',
         src: 'https://wordwall.net/embed/307d4e263d4242a3baa925494dde5d51?themeId=1&templateId=22&fontStackId=0',
-        aboutLesson: 'Выполни упражнение 4 в рабочей тетради, а потом сделай это задание и проверь ',
+        aboutLesson:
+          'Выполни упражнение 4 в рабочей тетради, а потом сделай это задание и проверь ',
       },
       {
         title: 'Упражнение 6',
         type: 'exercise',
         src: 'https://wordwall.net/embed/d498cae6d84f4c2396912f978c548e2f?themeId=1&templateId=36&fontStackId=0',
-        aboutLesson: 'Выполни упражнение 5 в рабочей тетради, а потом сделай это задание и проверь',
+        aboutLesson:
+          'Выполни упражнение 5 в рабочей тетради, а потом сделай это задание и проверь',
       },
-    ]
+    ],
   },
   {
     id: 4,
     title: 'Урок 4',
     image: ABC,
     content: 'H, I, J',
-     steps: [
+    steps: [
       {
         title: 'Видео 1',
         type: 'video',
@@ -227,7 +227,6 @@ export const alphabetCourseData: CourseData = [
         type: 'exercise',
         src: 'https://wordwall.net/embed/10641c1830de42b89c95d086dd5ee92b?themeId=1&templateId=3&fontStackId=0',
         aboutLesson: 'Соедини слово и картинку',
-
       },
       {
         title: 'Видео 2',
@@ -271,15 +270,13 @@ export const alphabetCourseData: CourseData = [
         src: mediaUrl('courses/introduction/starlight/video/L4_ex6.mp4'),
         aboutLesson: 'Смотри, слушай и повторяй',
       },
-      
       {
         title: 'Упражнение 6',
         type: 'exercise',
         src: 'https://wordwall.net/embed/1cec7c7484234bb8a6ac8eb414f733d8?themeId=45&templateId=72&fontStackId=0',
         aboutLesson: 'Составь предложение',
       },
-
-    ]
+    ],
   },
   {
     id: 5,
@@ -287,11 +284,12 @@ export const alphabetCourseData: CourseData = [
     image: ABC,
     content: 'Повторяем A-J',
     steps: [
-    {
+      {
         title: 'Упражнение 1',
         type: 'exercise',
         src: 'https://wordwall.net/embed/72447b69eb2f4110bdf71545d721cd15?themeId=1&templateId=5&fontStackId=0',
-        aboutLesson: 'Выбери пару (такое же слово, написанное строчными буквами)',
+        aboutLesson:
+          'Выбери пару (такое же слово, написанное строчными буквами)',
       },
       {
         title: 'Упражнение 2',
@@ -305,7 +303,7 @@ export const alphabetCourseData: CourseData = [
         src: 'https://wordwall.net/embed/a9c4180e36b64b9a8308e6edfcae5944?themeId=1&templateId=5&fontStackId=0',
         aboutLesson: 'Выбери лишнее слово',
       },
-    ]
+    ],
   },
   {
     id: 6,
@@ -335,13 +333,15 @@ export const alphabetCourseData: CourseData = [
         title: 'Упражнение 3',
         type: 'exercise',
         src: 'https://wordwall.net/embed/9fef39d821204e32adcfd819d63fdcb0?themeId=21&templateId=68&fontStackId=21',
-        aboutLesson: 'Изображение открывается постепенно. Нажми на кнопку, как только сможешь ответить на вопрос и выбери ответ',
+        aboutLesson:
+          'Изображение открывается постепенно. Нажми на кнопку, как только сможешь ответить на вопрос и выбери ответ',
       },
       {
         title: 'Упражнение 4',
         type: 'exercise',
         src: 'https://wordwall.net/embed/7f9454ac2d2942d6a6f50b639fb330e3?themeId=1&templateId=2&fontStackId=0',
-        aboutLesson: 'Соедини заглавную и строчную букву с соответствующей картинкой',
+        aboutLesson:
+          'Соедини заглавную и строчную букву с соответствующей картинкой',
       },
 
       {
@@ -362,13 +362,12 @@ export const alphabetCourseData: CourseData = [
         src: 'https://wordwall.net/embed/2cc86390c64c4793876bd8d79295b9b3?themeId=1&templateId=45&fontStackId=21',
         aboutLesson: 'Нажимай только на букву L l',
       },
-{
+      {
         title: 'Видео 3',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L6_ex6.mp4'),
         aboutLesson: 'Смотри, слушай и повторяй',
       },
-      
       {
         title: 'Упражнение 7',
         type: 'exercise',
@@ -381,8 +380,7 @@ export const alphabetCourseData: CourseData = [
         src: 'https://wordwall.net/embed/b493b16343604acb8d959fd5a5ce4a8f?themeId=1&templateId=3&fontStackId=0',
         aboutLesson: 'Соедини одиноаковые слова',
       },
-
-      ]
+    ],
   },
   {
     id: 7,
@@ -390,7 +388,6 @@ export const alphabetCourseData: CourseData = [
     image: ABC,
     content: 'Повторяем A-M',
     steps: [
-      
       {
         title: 'Упражнение 1',
         type: 'exercise',
@@ -413,7 +410,7 @@ export const alphabetCourseData: CourseData = [
         title: 'Упражнение 3',
         type: 'exercise',
         src: 'https://wordwall.net/embed/4d75f7badfe844c9af4095e82d3ffbf2?themeId=1&templateId=5&fontStackId=0',
-        aboutLesson:'Подбери рифму',
+        aboutLesson: 'Подбери рифму',
       },
       {
         title: 'Упражнение 4',
@@ -421,8 +418,7 @@ export const alphabetCourseData: CourseData = [
         src: 'https://wordwall.net/embed/aaddc88c3da84561a9514bcd0f3e33a7?themeId=1&templateId=38&fontStackId=0',
         aboutLesson: 'Послушай и составь слово',
       },
-
-      ]
+    ],
   },
   {
     id: 8,
@@ -472,7 +468,6 @@ export const alphabetCourseData: CourseData = [
         src: 'https://wordwall.net/embed/95b90695f4214964aff20f87b438173a?themeId=65&templateId=70&fontStackId=0',
         aboutLesson: 'прочитай слова',
       },
-      
       {
         title: 'Упражнение 5',
         type: 'exercise',
@@ -503,9 +498,9 @@ export const alphabetCourseData: CourseData = [
         src: 'https://wordwall.net/embed/e8f9815b9cba4290852990f69da960d7?themeId=1&templateId=5&fontStackId=0',
         aboutLesson: 'Выбери такое же слово',
       },
-    ]
+    ],
   },
- {
+  {
     id: 9,
     title: 'Урок 9',
     image: ABC,
@@ -535,7 +530,6 @@ export const alphabetCourseData: CourseData = [
         src: 'https://wordwall.net/embed/4f7ed8f24e974c4e946ad2d28656c4d5?themeId=1&templateId=5&fontStackId=21',
         aboutLesson: 'Выбери слово, которое не рифмуется с остальными',
       },
-      
       {
         title: 'Видео 3',
         type: 'video',
@@ -548,7 +542,7 @@ export const alphabetCourseData: CourseData = [
         src: 'https://wordwall.net/embed/2246069332024bbb9d3ed44fd432af6d?themeId=1&templateId=38&fontStackId=0',
         aboutLesson: 'Составь слово',
       },
-    {
+      {
         title: 'Упражнение 4 ',
         type: 'exercise',
         src: 'https://wordwall.net/embed/4c9e9874d82b449199f134c7f427bce3?themeId=1&templateId=3&fontStackId=0',
@@ -560,16 +554,15 @@ export const alphabetCourseData: CourseData = [
         src: 'https://wordwall.net/embed/beea6e127a7045f3935786405fee6ea6?themeId=27&templateId=82&fontStackId=0',
         aboutLesson: 'Поймай такое же слово',
       },
-    
+
       {
         title: 'Упражнение 6 ',
         type: 'exercise',
         src: 'https://wordwall.net/embed/35e3224a2f0e415aa5acd14952ac9ba4?themeId=45&templateId=72&fontStackId=0',
         aboutLesson: 'Составь предложение',
       },
-      
-    ]
-  }, 
+    ],
+  },
   {
     id: 10,
     title: 'Урок 10',
@@ -616,13 +609,15 @@ export const alphabetCourseData: CourseData = [
         title: 'Упражнение 5 ',
         type: 'exercise',
         src: 'https://wordwall.net/embed/62c2c955f9c4444f8e2314c4a917667b?themeId=1&templateId=38&fontStackId=0',
-        aboutLesson: 'Выполни упражнение 5 в рабочей тетради, затем сделай это задание',
+        aboutLesson:
+          'Выполни упражнение 5 в рабочей тетради, затем сделай это задание',
       },
       {
         title: 'Видео 3',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L10_ex6.mp4'),
-        aboutLesson: 'Выполни упражнение 6 в рабочей тетради, затем посмотри видео и проверь',
+        aboutLesson:
+          'Выполни упражнение 6 в рабочей тетради, затем посмотри видео и проверь',
       },
       {
         title: 'Упражнение 6 ',
@@ -640,33 +635,33 @@ export const alphabetCourseData: CourseData = [
         title: 'Упражнение 7 ',
         type: 'exercise',
         src: 'https://wordwall.net/embed/2dce13a406b148a99807734145319920?themeId=1&templateId=3&fontStackId=0',
-        aboutLesson: 'Выполни упражнение 8 в рабочей тетради, затем сделай это задание и проверь',
+        aboutLesson:
+          'Выполни упражнение 8 в рабочей тетради, затем сделай это задание и проверь',
       },
-
-      
-    ]
-  }, 
-{
+    ],
+  },
+  {
     id: 11,
     title: 'Урок 11',
     image: ABC,
     content: 'Повторяем A-T',
     steps: [
-      
       {
         title: 'Упражнение 1 ',
         type: 'exercise',
         src: 'https://wordwall.net/embed/0d3e803a9e9e4284ae9dc92992606235?themeId=2&templateId=10&fontStackId=0',
-        aboutLesson: 'Выполни упражнение 1 в рабочей тетради, затем сделай это задание и проверь',
+        aboutLesson:
+          'Выполни упражнение 1 в рабочей тетради, затем сделай это задание и проверь',
       },
       {
         title: 'Видео 1',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L11_ex2.mp4'),
-        aboutLesson: 'Выполни упражнение 2 в рабочей тетради, затем посмотри видео и проверь',
+        aboutLesson:
+          'Выполни упражнение 2 в рабочей тетради, затем посмотри видео и проверь',
       },
-    ]
-  }, 
+    ],
+  },
   {
     id: 12,
     title: 'Урок 12',
@@ -703,21 +698,20 @@ export const alphabetCourseData: CourseData = [
         src: 'https://wordwall.net/embed/716512f4b69b44a79ac1e89b193c3561?themeId=1&templateId=38&fontStackId=0',
         aboutLesson: 'Составь слово',
       },
-      
-    ]
-  }, 
+    ],
+  },
   {
     id: 13,
     title: 'Урок 13',
     image: ABC,
     content: 'Повторяем A-W',
     steps: [
-      
       {
         title: 'Упражнение 1 ',
         type: 'exercise',
         src: 'https://wordwall.net/embed/5057ff5998164d4e92447b4a22c92125?themeId=1&templateId=3&fontStackId=0',
-        aboutLesson: 'Выполни упражнение 1 в рабочей тетради, затем сделай это задание и проверь',
+        aboutLesson:
+          'Выполни упражнение 1 в рабочей тетради, затем сделай это задание и проверь',
       },
       {
         title: 'Видео 1',
@@ -731,7 +725,7 @@ export const alphabetCourseData: CourseData = [
         src: 'https://wordwall.net/embed/04efc23737bf43dfa1b817d44ec938fc?themeId=65&templateId=70&fontStackId=0',
         aboutLesson: 'Прочитай слова',
       },
-   {
+      {
         title: 'Видео 2',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L13_ex3.mp4'),
@@ -749,8 +743,8 @@ export const alphabetCourseData: CourseData = [
         src: mediaUrl('courses/introduction/starlight/video/L13_ex4.mp4'),
         aboutLesson: 'Смотри, слушай и повторяй',
       },
-       ]
-  }, 
+    ],
+  },
   {
     id: 14,
     title: 'Урок 14',
@@ -787,8 +781,8 @@ export const alphabetCourseData: CourseData = [
         src: '',
         aboutLesson: '',
       },
-    ]
-  }, 
+    ],
+  },
 ];
 
 // export default alphabetCourseData;
