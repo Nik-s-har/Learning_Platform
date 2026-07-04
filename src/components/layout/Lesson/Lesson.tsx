@@ -47,20 +47,6 @@ function Lesson(props: LessonProps) {
   return (
     <main className={styles.main}>
       <header className={styles.header}>
-        <nav
-          className={styles.backLink}
-          role="button"
-          tabIndex={0}
-          onClick={onBack ?? (() => navigate(-1))}
-          onKeyDown={(event) => {
-            if (event.key === 'Enter' || event.key === ' ') {
-              event.preventDefault();
-              (onBack ?? (() => navigate(-1)))();
-            }
-          }}
-        >
-          Назад к карте
-        </nav>
         <StepProgressBar stepState={stepState} activeStep={activeStep} onSelectStep={onSelectStep} />
         <h3>Урок {lessonId}</h3>
       </header>
