@@ -1,4 +1,4 @@
-import type { CourseData } from '@app-types/lesson';
+﻿import type { CourseData } from '@app-types/lesson';
 import { mediaUrl } from '@utils/media';
 import ABC from '@assets/pictures/ABC.png';
 
@@ -134,7 +134,7 @@ export const alphabetCourseData: CourseData = [
         title: 'Видео 4',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L2_ex6.mp4'),
-        aboutLesson: 'Прочитай слова',
+        aboutLesson: 'Прочитай слова. Выполни упражнение 6 в рабочей тетради',
       },
       {
         title: 'Упражнение 5',
@@ -259,7 +259,7 @@ export const alphabetCourseData: CourseData = [
         title: 'Видео 3',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L4_ex5.mp4'),
-        aboutLesson: 'Смотри, слушай и повторяй',
+        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
       },
       {
         title: 'Упражнение 5',
@@ -271,7 +271,7 @@ export const alphabetCourseData: CourseData = [
         title: 'Видео 4',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L4_ex6.mp4'),
-        aboutLesson: 'Смотри, слушай и повторяй',
+        aboutLesson: 'Прочитай предложения. Выполни упражнение 6 в рабочей тетради',
       },
 
       {
@@ -358,7 +358,7 @@ export const alphabetCourseData: CourseData = [
         title: 'Видео 2',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L6_ex5.mp4'),
-        aboutLesson: 'Смотри, слушай и повторяй',
+        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
       },
       {
         title: 'Упражнение 6',
@@ -370,7 +370,7 @@ export const alphabetCourseData: CourseData = [
         title: 'Видео 3',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L6_ex6.mp4'),
-        aboutLesson: 'Смотри, слушай и повторяй',
+        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 6 в рабочей тетради',
       },
 
       {
@@ -383,7 +383,7 @@ export const alphabetCourseData: CourseData = [
         title: 'Упражнение 8',
         type: 'exercise',
         src: 'https://wordwall.net/embed/b493b16343604acb8d959fd5a5ce4a8f?themeId=1&templateId=3&fontStackId=0',
-        aboutLesson: 'Соедини одиноаковые слова',
+        aboutLesson: 'Соедини одинаковые слова',
       },
     ],
   },
@@ -403,7 +403,7 @@ export const alphabetCourseData: CourseData = [
         title: 'Видео 1',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L7_ex3.mp4'),
-        aboutLesson: 'Смотри, слушай и повторяй',
+        aboutLesson: 'Прочитай предложения. Выполни упражнение 3 в рабочей тетради',
       },
       {
         title: 'Упражнение 2',
@@ -444,17 +444,19 @@ export const alphabetCourseData: CourseData = [
         aboutLesson: 'Соедини букву и картинку',
       },
       {
-        title: 'Видео 2',
+        title: 'Видео 1',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L8_ex2.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/L8_ex02.mp4'),
         aboutLesson: 'Смотри видео и выполняй задания 1-4 в рабочей тетради',
       },
+      
       {
         title: 'Упражнение 2',
         type: 'exercise',
         src: 'https://wordwall.net/embed/bb685df77307431494ae6455cd758936?themeId=27&templateId=82&fontStackId=0',
         aboutLesson: 'Выбери правильную букву',
       },
+      
       {
         title: 'Упражнение 3',
         type: 'exercise',
@@ -465,13 +467,13 @@ export const alphabetCourseData: CourseData = [
         title: 'Видео 3',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L8_ex5.mp4'),
-        aboutLesson: 'Прочитай слова',
+        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
       },
       {
         title: 'Упражнение 4',
         type: 'exercise',
         src: 'https://wordwall.net/embed/95b90695f4214964aff20f87b438173a?themeId=65&templateId=70&fontStackId=0',
-        aboutLesson: 'прочитай слова',
+        aboutLesson: 'Прочитай слова',
       },
 
       {
@@ -490,7 +492,7 @@ export const alphabetCourseData: CourseData = [
         title: 'Видео 4',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L8_ex6.mp4'),
-        aboutLesson: 'Прочитай предложения',
+        aboutLesson: 'Прочитай предложения. Выполни упражнение 6 в рабочей тетради',
       },
       {
         title: 'Упражнение 7',
@@ -636,7 +638,7 @@ export const alphabetCourseData: CourseData = [
         title: 'Видео 4',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L10_ex8.mp4'),
-        aboutLesson: 'Посмотри видео и прочитай тредложение',
+        aboutLesson: 'Посмотри видео и прочитай предложение',
       },
       {
         title: 'Упражнение 7 ',
@@ -690,7 +692,7 @@ export const alphabetCourseData: CourseData = [
       {
         title: 'Видео 2',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L12_ex2.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/L12_ex02.mp4'),
         aboutLesson: 'Смотри видео и выполняй задания 1-5 в рабочей тетради',
       },
       {
@@ -724,7 +726,7 @@ export const alphabetCourseData: CourseData = [
         title: 'Видео 1',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L13_ex2.mp4'),
-        aboutLesson: 'Смотри, слушай и повторяй',
+        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 2 в рабочей тетради',
       },
       {
         title: 'Упражнение 2 ',
@@ -736,7 +738,7 @@ export const alphabetCourseData: CourseData = [
         title: 'Видео 2',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L13_ex3.mp4'),
-        aboutLesson: 'Смотри, слушай и повторяй',
+        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 3 в рабочей тетради',
       },
       {
         title: 'Упражнение 3 ',
@@ -748,7 +750,7 @@ export const alphabetCourseData: CourseData = [
         title: 'Видео 3',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L13_ex4.mp4'),
-        aboutLesson: 'Смотри, слушай и повторяй',
+        aboutLesson: 'Послушай и прочитай предложения. Выполни упражнение 4 в рабочей тетради',
       },
     ],
   },
@@ -774,20 +776,43 @@ export const alphabetCourseData: CourseData = [
         title: 'Видео 2',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L14_ex2.mp4'),
-        aboutLesson: 'Смотри видео и выполняй задания 1-5 в рабочей тетради',
+        aboutLesson: 'Смотри видео и выполняй задания 5-7 в рабочей тетради',
+      },
+      {
+        title: 'Упражнение 3 ',
+        type: 'exercise',
+        src: 'https://wordwall.net/embed/01d1fa7c18aa4d0b87dcf6f2ab7de529?themeId=1&templateId=5&fontStackId=0',
+        aboutLesson: 'Послушай и выбери правильное слово',
+      },
+      
+    ],
+  },
+  {
+    id: 15,
+    title: 'Урок 15',
+    image: ABC,
+    content: 'Повторяем A-Z',
+    steps: [
+      {
+        title: 'Видео 1',
+        type: 'video',
+        src: mediaUrl('courses/introduction/starlight/video/L15.mp4'),
+        aboutLesson: 'Смотри видео и выполняй задания 1-3 в рабочей тетради',
       },
       {
         title: 'Упражнение 1 ',
         type: 'exercise',
-        src: '',
-        aboutLesson: '',
+        src: 'https://wordwall.net/embed/fb459e519be34c34abf1056dc43dac4b?themeId=1&templateId=46&fontStackId=0',
+        aboutLesson: 'Выбери слово, которое рифмуется ',
       },
+      
       {
-        title: 'Упражнение 1 ',
+        title: 'Упражнение 2 ',
         type: 'exercise',
-        src: '',
-        aboutLesson: '',
+        src: 'https://wordwall.net/embed/1cca792138e64019a069c5b7c4c61864?themeId=1&templateId=5&fontStackId=0',
+        aboutLesson: 'Прочитай вопрос и выбери правильный ответ',
       },
+      
     ],
   },
 ];

@@ -9,7 +9,7 @@ export function AlphabetRoadmap() {
 
   if (!isTextbookSlug(textbook)) return <Navigate to="/" replace />;
 
-  const { data } = alphabetTextbooks[textbook];
+  const { data, workbookUrl } = alphabetTextbooks[textbook];
 
   return (
     <main className={styles.conteiner}>
@@ -19,6 +19,17 @@ export function AlphabetRoadmap() {
           <p>
             Скачай рабочую тетрадь и начинай заниматься
           </p>
+          {workbookUrl && (
+            <a
+              className={styles.workbookButton}
+              href={workbookUrl}
+              download="Alphabet workbook StL.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Скачать рабочую тетрадь
+            </a>
+          )}
         </section>
         <section className={styles.alphabetRoadmap}>
           {data.map((lesson) => (
