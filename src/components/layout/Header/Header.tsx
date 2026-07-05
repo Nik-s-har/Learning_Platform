@@ -1,22 +1,9 @@
-import { NavLink, useNavigate } from 'react-router-dom';
-import { useAuth } from '@context/AuthContext';
+import { NavLink } from 'react-router-dom';
 import { alphabetTextbooks } from '@alphabet/data';
 import styles from './Header.module.css';
-import Logo from '@assets/pictures/logo.png';
-import Button from '@ui/button';
+import Logo from '@assets/pictures/logosmart.svg';
 
 function Header() {
-  const { user, signOut } = useAuth();
-  const navigate = useNavigate();
-
-  const handleAuthClick = async () => {
-    if (user) {
-      await signOut();
-    } else {
-      void navigate('/login');
-    }
-  };
-
   return (
     <header className={`${styles.container}`}>
       <img src={Logo} alt="Logo" />
@@ -30,16 +17,8 @@ function Header() {
               <NavLink to={`/alphabet/${slug}`}>{menuLabel}</NavLink>
             </li>
           ))}
-          <li className={styles.menuItem}>Блог</li>
         </ul>
       </nav>
-      <Button
-        variant="secondary"
-        colorScheme="blueWhite"
-        onClick={handleAuthClick}
-      >
-        {user ? 'Выйти' : 'Войти'}
-      </Button>
     </header>
   );
 }

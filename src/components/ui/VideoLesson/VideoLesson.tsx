@@ -1,4 +1,5 @@
 import { Video } from 'lucide-react';
+import type { ReactNode } from 'react';
 import Button from '@ui/button';
 import styles from './VideoLesson.module.css';
 
@@ -7,9 +8,16 @@ export interface VideoLessonProps {
   aboutLesson: string;
   onComplete?: () => void;
   submitLabel?: string;
+  actions?: ReactNode;
 }
 
-function VideoLesson({ videoSrc, aboutLesson, onComplete, submitLabel }: VideoLessonProps) {
+function VideoLesson({
+  videoSrc,
+  aboutLesson,
+  onComplete,
+  submitLabel,
+  actions,
+}: VideoLessonProps) {
   return (
     <div className={styles.card}>
       <h3 className={styles.title}>
@@ -25,9 +33,11 @@ function VideoLesson({ videoSrc, aboutLesson, onComplete, submitLabel }: VideoLe
 
       <p className={styles.description}>{aboutLesson}</p>
 
-      <Button variant="primary" colorScheme="blueWhite" onClick={onComplete}>
-        {submitLabel ?? 'Я посмотрел! Идем дальше →'}
-      </Button>
+      {actions ?? (
+        <Button variant="primary" colorScheme="blueWhite" onClick={onComplete}>
+          {submitLabel ?? 'Я посмотрел! Идем дальше →'}
+        </Button>
+      )}
     </div>
   );
 }

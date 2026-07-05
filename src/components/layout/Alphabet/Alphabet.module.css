@@ -17,3 +17,10 @@
     justify-content: center;
     gap: 32px;
 }
+
+.buttonGroup {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}

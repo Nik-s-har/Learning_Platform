@@ -9,21 +9,35 @@ export function AlphabetRoadmap() {
 
   if (!isTextbookSlug(textbook)) return <Navigate to="/" replace />;
 
-  const { data, workbookUrl } = alphabetTextbooks[textbook];
+  const { data, mapImage, menuLabel, workbookUrl, workbookDownloadName } =
+    alphabetTextbooks[textbook];
 
   return (
     <main className={styles.conteiner}>
       <div className={styles.content}>
         <section className={styles.header}>
-          <h2>Карта уроков</h2>
-          <p>
-            Скачай рабочую тетрадь и начинай заниматься
-          </p>
+          <img
+            className={styles.mapImage}
+            src={mapImage}
+            alt={menuLabel}
+          />
+          <h2 className={styles.courseTitle}>
+            Вводный курс к{' '}
+            <span
+              className={
+                textbook === 'starlight'
+                  ? styles.starlightTitle
+                  : styles.spotlightTitle
+              }
+            >
+              {textbook === 'starlight' ? 'Starlight' : 'Spotlight'}
+            </span>
+          </h2>
           {workbookUrl && (
             <a
               className={styles.workbookButton}
               href={workbookUrl}
-              download="Alphabet workbook StL.pdf"
+              download={workbookDownloadName}
               target="_blank"
               rel="noreferrer"
             >

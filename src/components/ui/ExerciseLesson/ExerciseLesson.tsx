@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import Button from '@ui/button';
 import styles from './ExerciseLesson.module.css';
 
@@ -6,10 +7,11 @@ export interface ExerciseLessonProps {
   aboutLesson?: string;
   onComplete?: () => void;
   submitLabel?: string;
+  actions?: ReactNode;
 }
 
 function ExerciseLesson(props: ExerciseLessonProps) {
-  const { exerciseSrc, aboutLesson, onComplete, submitLabel } = props;
+  const { exerciseSrc, aboutLesson, onComplete, submitLabel, actions } = props;
   return (
     <div className={styles.container}>
       <h3 className={styles.title}></h3>
@@ -18,9 +20,11 @@ function ExerciseLesson(props: ExerciseLessonProps) {
 
       <p className={styles.description}>{aboutLesson}</p>
 
-      <Button variant="primary" colorScheme="blueWhite" onClick={onComplete}>
-        {submitLabel ?? 'Я выполнил! Идем дальше →'}
-      </Button>
+      {actions ?? (
+        <Button variant="primary" colorScheme="blueWhite" onClick={onComplete}>
+          {submitLabel ?? 'Я выполнил! Идем дальше →'}
+        </Button>
+      )}
     </div>
   );
 }

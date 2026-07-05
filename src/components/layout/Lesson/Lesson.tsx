@@ -25,6 +25,29 @@ function Lesson(props: LessonProps) {
   const navigate = useNavigate();
   const { lessonId, stepState, activeStep, type, src, aboutLesson, onComplete, onSelectStep, onBack, courseMapHref, nextLessonHref, isLastStep, submitLabel } = props;
 
+  const lessonActions = isLastStep ? (
+    <div className={styles.lessonActions}>
+      {courseMapHref ? (
+        <Link to={courseMapHref} className={styles.actionButton}>
+          К карте уроков
+        </Link>
+      ) : (
+        <button
+          type="button"
+          className={styles.actionButton}
+          onClick={onBack ?? (() => navigate(-1))}
+        >
+          К карте уроков
+        </button>
+      )}
+      {nextLessonHref && (
+        <Link to={nextLessonHref} className={styles.actionButton}>
+          Следующий урок →
+        </Link>
+      )}
+    </div>
+  ) : undefined;
+
   const lessonContent: Record<LessonProps['type'], ReactElement> = {
     video: (
       <VideoLesson
@@ -32,6 +55,7 @@ function Lesson(props: LessonProps) {
         aboutLesson={aboutLesson}
         onComplete={onComplete}
         submitLabel={submitLabel}
+        actions={lessonActions}
       />
     ),
     exercise: (
@@ -40,6 +64,7 @@ function Lesson(props: LessonProps) {
         aboutLesson={aboutLesson}
         onComplete={onComplete}
         submitLabel={submitLabel}
+        actions={lessonActions}
       />
     ),
   };
@@ -51,28 +76,6 @@ function Lesson(props: LessonProps) {
         <h3>Урок {lessonId}</h3>
       </header>
       {lessonContent[type]}
-      {isLastStep && (
-        <div className={styles.lessonActions}>
-          {courseMapHref ? (
-            <Link to={courseMapHref} className={styles.actionButton}>
-              К карте уроков
-            </Link>
-          ) : (
-            <button
-              type="button"
-              className={styles.actionButton}
-              onClick={onBack ?? (() => navigate(-1))}
-            >
-              К карте уроков
-            </button>
-          )}
-          {nextLessonHref && (
-            <Link to={nextLessonHref} className={styles.actionButton}>
-              Следующий урок →
-            </Link>
-          )}
-        </div>
-      )}
     </main>
   );
 }

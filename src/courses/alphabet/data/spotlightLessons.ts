@@ -1,6 +1,6 @@
 import type { CourseData } from '@app-types/lesson';
 import { mediaUrl } from '@utils/media';
-import ABC from '@assets/pictures/ABC.png';
+import ABC from '@assets/pictures/ABC_Spotlight.png';
 
 // TODO: Spotlight content — структурная заглушка, заполнить видео и Wordwall-ссылки.
 // Структура повторяет alphabetLessons.ts (Starlight): уроки c id, title, image,
