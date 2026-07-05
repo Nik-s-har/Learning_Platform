@@ -10,28 +10,60 @@
 }
 
 .header {
-    position: relative;
     text-align: center;
-    padding-block-start: 100px;
     padding-inline: 100px;
     margin-block-end: 64px;
 }
 
-.header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    aspect-ratio: 1;
-    border: 1px solid var(--accent-color);
-    border-radius: 50%;
-    background-color: var(--accent-color);
+.mapImage {
+    display: block;
+    width: min(340px, 100%);
+    height: auto;
+    margin: 0 auto -90px;
+    object-fit: contain;
 }
 
 .header h2 {
     margin-block-end: 16px;
+}
+
+.courseTitle {
+    color: #06bdbb;
+}
+
+.starlightTitle {
+    color: #ffbe0c;
+}
+
+.spotlightTitle {
+    color: #0771de;
+}
+
+.workbookButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-start: 24px;
+    padding: 14px 24px;
+    border: 2px solid var(--base-color);
+    border-radius: 16px;
+    background-color: var(--base-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.workbookButton:hover {
+    filter: brightness(0.94);
+    transform: translateY(-1px);
+}
+
+.workbookButton:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
 }
 
 .alphabetRoadmap {

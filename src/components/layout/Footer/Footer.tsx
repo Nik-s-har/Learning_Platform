@@ -1,6 +1,7 @@
 import styles from './Footer.module.css';
-import Logo from '@assets/pictures/logo.png';
-import { VKIcon, DzenIcon, MailIcon, PinterestIcon } from '../../icons';
+import Logo from '@assets/pictures/logosmartfooter.svg';
+import { VKIcon, PinterestIcon } from '../../icons';
+import { Link } from 'react-router-dom';
 
 // TODO: Можно сократить функцию: если списки меню и социальных сетей переделать метод map массива
 function Footer() {
@@ -10,16 +11,22 @@ function Footer() {
         <div className={styles.about}>
           <img src={Logo} alt="Logo" />
           <p>
-            Интерактивная платформа для детей 7-9 лет, которая превращает
-            изучение английского в увлекательное приключение.
+            Интерактивная платформа для детей, которая превращает
+            изучение школьного английского в увлекательное приключение.
           </p>
         </div>
         <nav>
           <h4>Меню</h4>
           <ul className={styles.menu}>
-            <li>Главная</li>
-            <li>Курс Алфавит</li>
-            <li>Блог</li>
+            <li>
+              <Link to="/">Главная</Link>
+            </li>
+            <li>
+              <Link to="/alphabet/starlight">Вводный курс к Starlight</Link>
+            </li>
+            <li>
+              <Link to="/alphabet/spotlight">Вводный курс к Spotlight</Link>
+            </li>
           </ul>
         </nav>
         <nav className={styles.contacts}>
@@ -27,7 +34,7 @@ function Footer() {
           <ul className={styles.contactsList}>
             <li>
               <a
-                href="https://vk.com"
+                href="https://vk.com/englishwith_ov"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.socialButton}
@@ -38,7 +45,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://pinterest.com"
+                href="https://ru.pinterest.com/Englishwith_OV_"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.socialButton}
@@ -47,30 +54,10 @@ function Footer() {
                 <PinterestIcon />
               </a>
             </li>
-            <li>
-              <a
-                href="https://dzen.ru"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.socialButton}
-                title="Яндекс Дзен"
-              >
-                <DzenIcon />
-              </a>
-            </li>
-            <li>
-              <a
-                href="mailto:contact@englishmagic.ru"
-                className={styles.socialButton}
-                title="Email"
-              >
-                <MailIcon />
-              </a>
-            </li>
           </ul>
         </nav>
       </div>
-      <p className={styles.rights}>© 2026 ИграйУчи. Все права защищены.</p>
+      
     </footer>
   );
 }

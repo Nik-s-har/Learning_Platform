@@ -12,7 +12,7 @@ function CardPresentation({ Icon, head, text }: CardPresentationProps) {
     <div className={styles.container}>
       <Icon color="var(--color-sky-300)" />
       <h3>{head}</h3>
-      <p>{text}</p>
+      {text && <p>{text}</p>}
     </div>
   );
 }

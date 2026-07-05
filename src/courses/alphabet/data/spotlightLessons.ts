@@ -1,6 +1,6 @@
 import type { CourseData } from '@app-types/lesson';
 import { mediaUrl } from '@utils/media';
-import ABC from '@assets/pictures/ABC.png';
+import ABC from '@assets/pictures/ABC_Spotlight.png';
 
 // TODO: Spotlight content — структурная заглушка, заполнить видео и Wordwall-ссылки.
 // Структура повторяет alphabetLessons.ts (Starlight): уроки c id, title, image,
@@ -15,65 +15,55 @@ export const spotlightLessons: CourseData = [
       {
         title: 'Видео 1',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L1_ex1.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/SL1_ex1.mp4'),
         aboutLesson: 'Смотри, слушай и повторяй',
       },
       {
         title: 'Упражнение 1',
         type: 'exercise',
-        src: 'https://wordwall.net/ru/embed/e1e2d86678774a9d9901f63a48cf0341?themeId=1&templateId=3&fontStackId=0&autoplay=1',
+        src: 'https://wordwall.net/embed/9ec82313195d4d12bd6b06630f8fa0b8?themeId=1&templateId=3&fontStackId=0',
         aboutLesson: 'Соедини слово и картинку',
       },
       {
         title: 'Видео 2',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L1_ex2.mp4'),
-        aboutLesson: 'Смотри видео и выполняй задания 1-3 в рабочей тетради',
+        src: mediaUrl('courses/introduction/starlight/video/SL1_ex2.mp4'),
+        aboutLesson: 'Смотри видео и выполняй задания 1-4 в рабочей тетради',
       },
       {
         title: 'Упражнение 2',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/c6468d02ab074b1495a61854f33efc23?themeId=1&templateId=82&fontStackId=0',
+        src: 'https://wordwall.net/embed/078b3b85466443bd9d9b9599a5fee58c?themeId=1&templateId=82&fontStackId=0',
         aboutLesson: 'Послушай слово и поймай правильную картинку',
       },
       {
         title: 'Упражнение 3',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/849658d2d957425a983b5c6a69682481?themeId=1&templateId=3&fontStackId=0',
+        src: 'https://wordwall.net/embed/d76e6b8fcdfb4249b4971e12646bf713?themeId=1&templateId=3&fontStackId=0',
         aboutLesson: 'Соедини картинку и букву',
       },
-      {
-        title: 'Видео 3',
-        type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L1_ex3.mp4'),
-        aboutLesson: 'Смотри видео и выполняй задание 4 в рабочей тетради',
-      },
+    
 
       {
         title: 'Упражнение 4',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/e5270e2e83974a6eb37dbae6f804ccf3?themeId=45&templateId=3&fontStackId=21',
+        src: 'https://wordwall.net/embed/b87b1d987b5948d389ff91a81092f0b2?themeId=45&templateId=3&fontStackId=0',
         aboutLesson: 'Найди пару: соедини заглавную и строчную букву',
       },
       {
         title: 'Видео 4',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L1_ex5.mp4'),
-        aboutLesson: 'Смотри видео и повторяй',
+        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
       },
 
       {
         title: 'Упражнение 5',
         type: 'exercise',
         src: 'https://wordwall.net/embed/95aa480820c64793b23750b9bc6bc2a6?themeId=62&templateId=70&fontStackId=21',
-        aboutLesson: 'Прочитай слова',
+        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
       },
-      {
-        title: 'Видео 5',
-        type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L1_ex4.mp4'),
-        aboutLesson: 'Смотри видео и выполняй задания 5 и 6 в рабочей тетради',
-      },
+      
       {
         title: 'Упражнение 6',
         type: 'exercise',
@@ -91,51 +81,46 @@ export const spotlightLessons: CourseData = [
       {
         title: 'Видео 1',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L2_ex1.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/SL2_ ex1.mp4'),
         aboutLesson: 'Смотри, слушай и повторяй',
       },
       {
         title: 'Упражнение 1',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/0f4de313a6aa4b42a79b9b821dc537ba?themeId=1&templateId=3&fontStackId=0',
+        src: 'https://wordwall.net/embed/ac8798d09cce42e6b9a8753bbb4083a3?themeId=1&templateId=3&fontStackId=0',
         aboutLesson: 'Соедини слово и картинку',
       },
       {
         title: 'Видео 2',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L2_ex2.mp4'),
-        aboutLesson: 'Смотри видео и выполняй задания 1-3 в рабочей тетради',
+        src: mediaUrl('courses/introduction/starlight/video/SL2_ex2.mp4'),
+        aboutLesson: 'Смотри видео и выполняй задания 1-5 в рабочей тетради',
       },
       {
         title: 'Упражнение 2',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/809eaeba9fb5480689b6c867f67df085?themeId=1&templateId=82&fontStackId=0',
+        src: 'https://wordwall.net/embed/7a86372d74cf46f298b7e9b8f531c5ec?themeId=1&templateId=82&fontStackId=0',
         aboutLesson: 'Поймай правильное слово',
       },
       {
         title: 'Упражнение 3',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/79d4f9db27b446faa3aa3d1fd83affda?themeId=1&templateId=36&fontStackId=0',
+        src: 'https://wordwall.net/embed/ef3bd5aaa7cc499f83ae1606f5ef1538?themeId=1&templateId=36&fontStackId=0',
         aboutLesson: 'Вставь в слово правильную букву',
       },
-      {
-        title: 'Видео 3',
-        type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L2_ex3.mp4'),
-        aboutLesson: 'Смотри видео и выполняй задание 4 в рабочей тетради',
-      },
+      
 
       {
         title: 'Упражнение 4',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/0278e863b213453593ec2a6fdd6a4a60?themeId=1&templateId=3&fontStackId=0',
+        src: 'https://wordwall.net/embed/06685e6cafab473b95f9be7c14bf2d2d?themeId=1&templateId=3&fontStackId=0',
         aboutLesson: 'Заглавные и строчные буквы: найди пару',
       },
       {
         title: 'Видео 4',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L2_ex6.mp4'),
-        aboutLesson: 'Прочитай слова',
+        aboutLesson: 'Прочитай слова. Упражнение 6 в рабочей тетради.',
       },
       {
         title: 'Упражнение 5',
@@ -161,20 +146,20 @@ export const spotlightLessons: CourseData = [
       {
         title: 'Видео 1',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L3_ex1.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/SL3_ex1.mp4'),
         aboutLesson: 'Смотри видео и выполняй задания 1-3 в рабочей тетради',
       },
 
       {
         title: 'Упражнение 1',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/6f810760e83f47cd93d7cbab4f8278c2?themeId=1&templateId=3&fontStackId=0',
+        src: 'https://wordwall.net/embed/2d99da6b37ad4c8d8dbf1dfb2802b2e9?themeId=1&templateId=3&fontStackId=0',
         aboutLesson: 'Соедини картинку и букву',
       },
       {
         title: 'Упражнение 2',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/04d48638d5bf460ea820c6a23ed4dc94?themeId=1&templateId=3&fontStackId=0',
+        src: 'https://wordwall.net/embed/1795d571fb5d42cc852abbaca9aad40b?themeId=1&templateId=3&fontStackId=0',
         aboutLesson: 'Соедини картинку и слово',
       },
       {
@@ -198,17 +183,12 @@ export const spotlightLessons: CourseData = [
         aboutLesson: 'Прочитай слова',
       },
 
+    
+    
       {
         title: 'Упражнение 5',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/307d4e263d4242a3baa925494dde5d51?themeId=1&templateId=22&fontStackId=0',
-        aboutLesson:
-          'Выполни упражнение 4 в рабочей тетради, а потом сделай это задание и проверь ',
-      },
-      {
-        title: 'Упражнение 6',
-        type: 'exercise',
-        src: 'https://wordwall.net/embed/d498cae6d84f4c2396912f978c548e2f?themeId=1&templateId=36&fontStackId=0',
+        src: 'https://wordwall.net/embed/9cb14954c45d4e37960949c7875841c7?themeId=1&templateId=36&fontStackId=0',
         aboutLesson:
           'Выполни упражнение 5 в рабочей тетради, а потом сделай это задание и проверь',
       },
@@ -223,44 +203,44 @@ export const spotlightLessons: CourseData = [
       {
         title: 'Видео 1',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L4_ex1.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/SL4_ex1.mp4'),
         aboutLesson: 'Смотри, слушай и повторяй',
       },
       {
         title: 'Упражнение 1',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/10641c1830de42b89c95d086dd5ee92b?themeId=1&templateId=3&fontStackId=0',
+        src: 'https://wordwall.net/embed/2f435c5c0c424a83a9eae7ac03e51438?themeId=1&templateId=3&fontStackId=0',
         aboutLesson: 'Соедини слово и картинку',
       },
       {
         title: 'Видео 2',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L4_ex2.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/SL4_ex2.mp4'),
         aboutLesson: 'Смотри видео и выполняй задания 1-4 в рабочей тетради',
       },
       {
         title: 'Упражнение 2',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/496f08f103234a66a8a5d7bd8b5ec04c?themeId=1&templateId=25&fontStackId=21',
+        src: 'https://wordwall.net/embed/6de5d5c6e4ee4fcea86fe7fb2f189458?themeId=1&templateId=25&fontStackId=0',
         aboutLesson: 'Заглавные и строчные буквы: найди пару',
       },
       {
         title: 'Упражнение 3',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/ac108769862240efaa2493e4da523b39?themeId=1&templateId=2&fontStackId=21',
+        src: 'https://wordwall.net/embed/9abd7f43e0bf4ef18adfc80902f622c9?themeId=1&templateId=2&fontStackId=0',
         aboutLesson: 'Подбери к каждой картинке заглавную и строчную букву',
       },
       {
         title: 'Упражнение 4',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/3644304c327a44fcadecb29fee11aaff?themeId=46&templateId=82&fontStackId=21',
+        src: 'https://wordwall.net/embed/705371417b244efd96e7a2ded21361ad?themeId=46&templateId=82&fontStackId=0',
         aboutLesson: 'Поймай картинку, соответствующую букве',
       },
       {
         title: 'Видео 3',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L4_ex5.mp4'),
-        aboutLesson: 'Смотри, слушай и повторяй',
+        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
       },
       {
         title: 'Упражнение 5',
@@ -272,7 +252,7 @@ export const spotlightLessons: CourseData = [
         title: 'Видео 4',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L4_ex6.mp4'),
-        aboutLesson: 'Смотри, слушай и повторяй',
+        aboutLesson: 'Прочитай предложение. Выполни упражнение 6 в рабочей тетради',
       },
 
       {
@@ -306,7 +286,7 @@ export const spotlightLessons: CourseData = [
         title: 'Упражнение 3',
         type: 'exercise',
         src: 'https://wordwall.net/embed/a9c4180e36b64b9a8308e6edfcae5944?themeId=1&templateId=5&fontStackId=0',
-        aboutLesson: 'Выбери лишнее слово',
+        aboutLesson: 'Выбери лишнее слово. Выполни упражнение 4 в рабочей тетради, а потом сделай это задание и проверь',
       },
     ],
   },
@@ -319,32 +299,38 @@ export const spotlightLessons: CourseData = [
       {
         title: 'Видео 1',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L6_ex1.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/SL6_ex1.mp4'),
         aboutLesson: 'Смотри, слушай и повторяй',
       },
       {
         title: 'Упражнение 1',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/5b0e5fecdbeb4c8b9909c1cd1484374d?themeId=1&templateId=3&fontStackId=21',
+        src: 'https://wordwall.net/embed/99ac600cf1db44aeb6e2074743ccc60c?themeId=1&templateId=3&fontStackId=0',
         aboutLesson: 'Соедини слово и картинку',
+      },
+      {
+        title: 'Видео 2',
+        type: 'video',
+        src: mediaUrl('courses/introduction/starlight/video/SL6_ex2.mp4'),
+        aboutLesson: 'Смотри видео и выполняй задания 1-4 в рабочей тетради',
       },
       {
         title: 'Упражнение 2',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/ec450aeab8d24499987b4afe274eb603?themeId=66&templateId=49&fontStackId=21',
+        src: 'https://wordwall.net/embed/8485aad49d314c9cabdf422d33a7853c?themeId=66&templateId=49&fontStackId=0',
         aboutLesson: 'Добеги до зоны с правильным ответом, избегая врагов',
       },
       {
         title: 'Упражнение 3',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/9fef39d821204e32adcfd819d63fdcb0?themeId=21&templateId=68&fontStackId=21',
+        src: 'https://wordwall.net/embed/3ff83864104345bbb8cc1460ac016b3f?themeId=21&templateId=68&fontStackId=0',
         aboutLesson:
           'Изображение открывается постепенно. Нажми на кнопку, как только сможешь ответить на вопрос и выбери ответ',
       },
       {
         title: 'Упражнение 4',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/7f9454ac2d2942d6a6f50b639fb330e3?themeId=1&templateId=2&fontStackId=0',
+        src: 'https://wordwall.net/embed/71f133b4b6de4b0bb6e7b48060cee918?themeId=1&templateId=2&fontStackId=0',
         aboutLesson:
           'Соедини заглавную и строчную букву с соответствующей картинкой',
       },
@@ -352,14 +338,14 @@ export const spotlightLessons: CourseData = [
       {
         title: 'Упражнение 5',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/9534f107762542e4a5fb14587c30af45?themeId=1&templateId=5&fontStackId=21',
+        src: 'https://wordwall.net/embed/99dfd28072e04fc29f43133e34bfdb88?themeId=1&templateId=5&fontStackId=0',
         aboutLesson: 'Послушай и выбери правильный ответ',
       },
       {
-        title: 'Видео 2',
+        title: 'Видео 3',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L6_ex5.mp4'),
-        aboutLesson: 'Смотри, слушай и повторяй',
+        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
       },
       {
         title: 'Упражнение 6',
@@ -368,10 +354,10 @@ export const spotlightLessons: CourseData = [
         aboutLesson: 'Нажимай только на букву L l',
       },
       {
-        title: 'Видео 3',
+        title: 'Видео 4',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L6_ex6.mp4'),
-        aboutLesson: 'Смотри, слушай и повторяй',
+        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 6 в рабочей тетради',
       },
 
       {
@@ -384,7 +370,7 @@ export const spotlightLessons: CourseData = [
         title: 'Упражнение 8',
         type: 'exercise',
         src: 'https://wordwall.net/embed/b493b16343604acb8d959fd5a5ce4a8f?themeId=1&templateId=3&fontStackId=0',
-        aboutLesson: 'Соедини одиноаковые слова',
+        aboutLesson: 'Соедини одинаковые слова',
       },
     ],
   },
@@ -397,14 +383,14 @@ export const spotlightLessons: CourseData = [
       {
         title: 'Упражнение 1',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/81c697145e934ac1b0ce551be11c583b?themeId=1&templateId=36&fontStackId=0',
+        src: 'https://wordwall.net/embed/4ddcdf5c51c040979bee64ecf41f7e8b?themeId=1&templateId=36&fontStackId=0',
         aboutLesson: 'Выбери правильную букву',
       },
       {
         title: 'Видео 1',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L7_ex3.mp4'),
-        aboutLesson: 'Смотри, слушай и повторяй',
+        aboutLesson: 'Послушай и прочитай предложения. Выполни упражнение 3 в рабочей тетради',
       },
       {
         title: 'Упражнение 2',
@@ -435,44 +421,44 @@ export const spotlightLessons: CourseData = [
       {
         title: 'Видео 1',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L8_ex1.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/SL8_ex1.mp4'),
         aboutLesson: 'Смотри, слушай и повторяй',
       },
       {
         title: 'Упражнение 1',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/69be545d76e34a86a20c3bbd403e2aa4?themeId=1&templateId=3&fontStackId=0',
+        src: 'https://wordwall.net/embed/280e846fe66048248697b2b8694c0a13?themeId=1&templateId=3&fontStackId=0',
         aboutLesson: 'Соедини букву и картинку',
       },
       {
         title: 'Видео 2',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L8_ex2.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/SL8_ex2.mp4'),
         aboutLesson: 'Смотри видео и выполняй задания 1-4 в рабочей тетради',
       },
       {
         title: 'Упражнение 2',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/bb685df77307431494ae6455cd758936?themeId=27&templateId=82&fontStackId=0',
+        src: 'https://wordwall.net/embed/437411d2075d44079e5eac755a704464?themeId=27&templateId=82&fontStackId=0',
         aboutLesson: 'Выбери правильную букву',
       },
       {
         title: 'Упражнение 3',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/fc9ebe02145442a98ab8b1ddd7945ab2?themeId=65&templateId=25&fontStackId=0',
+        src: 'https://wordwall.net/embed/bed36ca589bd4485bf58451e126903c9?themeId=65&templateId=25&fontStackId=0',
         aboutLesson: 'Подбери пару',
       },
       {
         title: 'Видео 3',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L8_ex5.mp4'),
-        aboutLesson: 'Прочитай слова',
+        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
       },
       {
         title: 'Упражнение 4',
         type: 'exercise',
         src: 'https://wordwall.net/embed/95b90695f4214964aff20f87b438173a?themeId=65&templateId=70&fontStackId=0',
-        aboutLesson: 'прочитай слова',
+        aboutLesson: 'Прочитай слова',
       },
 
       {
@@ -491,7 +477,7 @@ export const spotlightLessons: CourseData = [
         title: 'Видео 4',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L8_ex6.mp4'),
-        aboutLesson: 'Прочитай предложения',
+        aboutLesson: 'Прочитай предложения. Выполни упражнение 6 в рабочей тетради',
       },
       {
         title: 'Упражнение 7',
@@ -516,7 +502,7 @@ export const spotlightLessons: CourseData = [
       {
         title: 'Видео 1',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L9_ex1.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/SL9_ex1.mp4'),
         aboutLesson: 'Смотри видео и выполняй задания 1-3 в рабочей тетради',
       },
       {
@@ -528,7 +514,7 @@ export const spotlightLessons: CourseData = [
       {
         title: 'Видео 2',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L9_ex2.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/SL9_ex2.mp4'),
         aboutLesson: 'Смотри видео и выполняй задания 4-6 в рабочей тетради',
       },
       {
@@ -547,7 +533,7 @@ export const spotlightLessons: CourseData = [
       {
         title: 'Упражнение 3 ',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/2246069332024bbb9d3ed44fd432af6d?themeId=1&templateId=38&fontStackId=0',
+        src: 'https://wordwall.net/embed/6ba28d59d479413a8f6e408fe54bc0d5?themeId=1&templateId=38&fontStackId=0',
         aboutLesson: 'Составь слово',
       },
       {
@@ -580,43 +566,43 @@ export const spotlightLessons: CourseData = [
       {
         title: 'Видео 1',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L10_ex1.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/SL10_ex1.mp4'),
         aboutLesson: 'Смотри, слушай и повторяй',
       },
       {
         title: 'Упражнение 1 ',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/ac6bc0891997424d818b3fa89f5e9cd0?themeId=1&templateId=2&fontStackId=0',
+        src: 'https://wordwall.net/embed/583743c5d59e4e658053b8b9680b3621?themeId=1&templateId=2&fontStackId=0',
         aboutLesson: 'Соедини заглавную и строчную буквы с картинкой',
       },
       {
         title: 'Видео 2',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L10_ex2.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/SL10_ex2.mp4'),
         aboutLesson: 'Смотри видео и выполняй задания 1-4 в рабочей тетради',
       },
       {
         title: 'Упражнение 2 ',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/afa8d5dc34f74d85a3618843475da85f?themeId=1&templateId=3&fontStackId=0',
+        src: 'https://wordwall.net/embed/5dfea6e062ef4bca921c61634671e8ae?themeId=1&templateId=3&fontStackId=0',
         aboutLesson: 'Соедини слово и картинку',
       },
       {
         title: 'Упражнение 3 ',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/a9c9e4246e1f4817a3da091d149072ec?themeId=65&templateId=46&fontStackId=0',
+        src: 'https://wordwall.net/embed/533f026983ed40b69f84d1ec003520ec?themeId=65&templateId=46&fontStackId=0',
         aboutLesson: 'Выбери правильное слово',
       },
       {
         title: 'Упражнение 4 ',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/b7e34f18604e49b7927a24ff0a2e22aa?themeId=27&templateId=82&fontStackId=0',
+        src: 'https://wordwall.net/embed/7171c604b3c644a0b0894470e7e0868e?themeId=27&templateId=82&fontStackId=0',
         aboutLesson: 'Поймай правильную картинку',
       },
       {
         title: 'Упражнение 5 ',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/62c2c955f9c4444f8e2314c4a917667b?themeId=1&templateId=38&fontStackId=0',
+        src: 'https://wordwall.net/embed/54fe97334fc146d8b532774dc7f9dc64?themeId=1&templateId=38&fontStackId=0',
         aboutLesson:
           'Выполни упражнение 5 в рабочей тетради, затем сделай это задание',
       },
@@ -654,19 +640,13 @@ export const spotlightLessons: CourseData = [
     image: ABC,
     content: 'Повторяем A-T',
     steps: [
-      {
-        title: 'Упражнение 1 ',
-        type: 'exercise',
-        src: 'https://wordwall.net/embed/0d3e803a9e9e4284ae9dc92992606235?themeId=2&templateId=10&fontStackId=0',
-        aboutLesson:
-          'Выполни упражнение 1 в рабочей тетради, затем сделай это задание и проверь',
-      },
+      
       {
         title: 'Видео 1',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L11_ex2.mp4'),
         aboutLesson:
-          'Выполни упражнение 2 в рабочей тетради, затем посмотри видео и проверь',
+          'Выполни упражнение 1 в рабочей тетради, затем посмотри видео и проверь',
       },
     ],
   },
@@ -679,31 +659,31 @@ export const spotlightLessons: CourseData = [
       {
         title: 'Видео 1',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L12_ex1.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/SL12_ex1.mp4'),
         aboutLesson: 'Смотри, слушай и повторяй',
       },
       {
         title: 'Упражнение 1 ',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/52113151cd60445cb3c75e8d0651b53f?themeId=1&templateId=3&fontStackId=0',
+        src: 'https://wordwall.net/embed/b16353fb44b540c8bb4d38dc6b1ad2f1?themeId=1&templateId=3&fontStackId=0',
         aboutLesson: 'Соедини слово и картинку',
       },
       {
         title: 'Видео 2',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L12_ex2.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/SL12_ex2.mp4'),
         aboutLesson: 'Смотри видео и выполняй задания 1-5 в рабочей тетради',
       },
       {
         title: 'Упражнение 2 ',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/ee009ee5665d425294b90e1dbea78eaa?themeId=27&templateId=82&fontStackId=0',
+        src: 'https://wordwall.net/embed/299cfd281e144df38642728d87a056a1?themeId=27&templateId=82&fontStackId=0" width=',
         aboutLesson: 'Поймай правильное слово',
       },
       {
         title: 'Упражнение 3 ',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/716512f4b69b44a79ac1e89b193c3561?themeId=1&templateId=38&fontStackId=0',
+        src: 'https://wordwall.net/embed/c7b8ac2a0d1a4217b06290ac2ee0f078?themeId=1&templateId=38&fontStackId=0',
         aboutLesson: 'Составь слово',
       },
     ],
@@ -717,7 +697,7 @@ export const spotlightLessons: CourseData = [
       {
         title: 'Упражнение 1 ',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/5057ff5998164d4e92447b4a22c92125?themeId=1&templateId=3&fontStackId=0',
+        src: 'https://wordwall.net/embed/5d3da4b7edbf48db9f241cc92e255cba?themeId=1&templateId=3&fontStackId=0',
         aboutLesson:
           'Выполни упражнение 1 в рабочей тетради, затем сделай это задание и проверь',
       },
@@ -725,7 +705,7 @@ export const spotlightLessons: CourseData = [
         title: 'Видео 1',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L13_ex2.mp4'),
-        aboutLesson: 'Смотри, слушай и повторяй',
+        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 2 в рабочей тетради',
       },
       {
         title: 'Упражнение 2 ',
@@ -737,7 +717,7 @@ export const spotlightLessons: CourseData = [
         title: 'Видео 2',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L13_ex3.mp4'),
-        aboutLesson: 'Смотри, слушай и повторяй',
+        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 3 в рабочей тетради',
       },
       {
         title: 'Упражнение 3 ',
@@ -749,7 +729,7 @@ export const spotlightLessons: CourseData = [
         title: 'Видео 3',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L13_ex4.mp4'),
-        aboutLesson: 'Смотри, слушай и повторяй',
+        aboutLesson: 'Послушай и прочитай предложения. Выполни упражнение 4 в рабочей тетради',
       },
     ],
   },
@@ -762,33 +742,68 @@ export const spotlightLessons: CourseData = [
       {
         title: 'Видео 1',
         type: 'video',
-        src: mediaUrl('courses/introduction/starlight/video/L14_ex1.mp4'),
+        src: mediaUrl('courses/introduction/starlight/video/SL14_ex1.mp4'),
         aboutLesson: 'Смотри, слушай и повторяй',
       },
       {
         title: 'Упражнение 1 ',
         type: 'exercise',
-        src: 'https://wordwall.net/embed/a4eac9e901a446e787ca41bd1276efba?themeId=1&templateId=3&fontStackId=0',
+        src: 'https://wordwall.net/embed/f52ecf145f3745baae67958f7153e6ed?themeId=1&templateId=3&fontStackId=0',
         aboutLesson: 'Соедини слово и картинку',
       },
+     {
+        title: 'Видео 2',
+        type: 'video',
+        src: mediaUrl('courses/introduction/starlight/video/SL14_ex002.mp4'),
+        aboutLesson: 'Смотри видео и выполняй задания 1-4 в рабочей тетради',
+      },
+      {
+        title: 'Упражнение 2 ',
+        type: 'exercise',
+        src: 'https://wordwall.net/embed/c8f0ad4431ed41009c1cd3cc56d0d50a?themeId=27&templateId=82&fontStackId=0',
+        aboutLesson: 'Поймай правильное слово',
+      },
+
       {
         title: 'Видео 2',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L14_ex2.mp4'),
-        aboutLesson: 'Смотри видео и выполняй задания 1-5 в рабочей тетради',
+        aboutLesson: 'Смотри видео и выполняй задания 5-7 в рабочей тетради',
+      },
+      {
+        title: 'Упражнение 3 ',
+        type: 'exercise',
+        src: 'https://wordwall.net/embed/01d1fa7c18aa4d0b87dcf6f2ab7de529?themeId=1&templateId=5&fontStackId=0',
+        aboutLesson: 'Послушай и выбери правильное слово',
+      },
+    ],
+  },
+  {
+    id: 15,
+    title: 'Урок 15',
+    image: ABC,
+    content: 'Повторяем A-Z',
+    steps: [
+      {
+        title: 'Видео 1',
+        type: 'video',
+        src: mediaUrl('courses/introduction/starlight/video/L15.mp4'),
+        aboutLesson: 'Смотри видео и выполняй задания 1-3 в рабочей тетради',
       },
       {
         title: 'Упражнение 1 ',
         type: 'exercise',
-        src: '',
-        aboutLesson: '',
+        src: 'https://wordwall.net/embed/fb459e519be34c34abf1056dc43dac4b?themeId=1&templateId=46&fontStackId=0',
+        aboutLesson: 'Выбери слово, которое рифмуется',
       },
+      
       {
-        title: 'Упражнение 1 ',
+        title: 'Упражнение 2 ',
         type: 'exercise',
-        src: '',
-        aboutLesson: '',
+        src: 'https://wordwall.net/embed/1cca792138e64019a069c5b7c4c61864?themeId=1&templateId=5&fontStackId=0',
+        aboutLesson: 'Прочитай вопрос и выбери правильный ответ',
       },
+      
     ],
   },
 ];
