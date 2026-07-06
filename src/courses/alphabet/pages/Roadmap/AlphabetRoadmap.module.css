@@ -67,17 +67,6 @@
 }
 
 .alphabetRoadmap {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-
-.workbookButton:focus-visible {
-  outline: 3px solid var(--accent-color);
-  outline-offset: 3px;
-}
-
-.alphabetRoadmap {
   position: relative;
   display: flex;
   flex-direction: column;
