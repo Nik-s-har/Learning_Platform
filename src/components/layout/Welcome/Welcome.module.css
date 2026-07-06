@@ -1,30 +1,30 @@
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 48px;
-  background-color: var(--bg-color);
-  padding-inline: 104px;
-  padding-block: 64px;
-  align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
+    background-color: var(--bg-color);
+    padding-inline: 104px;
+    padding-block: 64px;
+    align-items: start;
 }
 
 .infoArea {
-  display: flex;
-  flex-direction: column;
-  row-gap: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
 }
 
 .logo {
-  width: 480px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  margin-bottom: -32px;
+    width: 480px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    margin-bottom: -32px;
 }
 
 .infoArea > h2 {
-  margin: 0;
+    margin: 0;
 }
 
 .infoArea > button:first-child {
@@ -45,17 +45,17 @@
 }
 
 .buttonContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: auto;
 }
 
 .imageArea {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: start;
 }
 
 .imageContainer {

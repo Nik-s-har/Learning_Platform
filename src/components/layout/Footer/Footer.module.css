@@ -58,8 +58,18 @@
   color: white;
 }
 
-.contact {
-  /* grid-area: Contact;  */
+.menu a {
+    color: var(--color-slate-400);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.contact { 
+    /* grid-area: Contact;  */
 }
 
 .contactsList {
