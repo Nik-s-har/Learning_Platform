@@ -1,6 +1,6 @@
 .main {
-    background-color: var(--bg-sky-color);
-    padding-block: 32px 80px;
+  background-color: var(--bg-sky-color);
+  padding-block: 32px 80px;
 }
 
 .header {
@@ -44,14 +44,14 @@
 
 .actionButton:hover,
 .actionButton:focus-visible {
-    transform: translateY(-1px);
-    background-color: #0f8ce0;
+  transform: translateY(-1px);
+  background-color: #0f8ce0;
 }
 
 .lessonTitle {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
 .lessonTitle span {

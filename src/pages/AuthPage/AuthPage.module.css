@@ -70,3 +70,17 @@
 .toggle:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 767px) {
+  .main {
+    min-height: 70vh;
+    padding: 24px 16px;
+  }
+  .card {
+    padding: 28px 20px;
+    border-radius: 20px;
+  }
+  .input {
+    min-height: 44px;
+  }
+}

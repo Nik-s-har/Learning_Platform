@@ -1,52 +1,61 @@
 .layout {
-    color: var(--color-slate-400);
-    background-color: var(--color-slate-900);
-    padding-block: 48px;
-    padding-inline: 36px;
+  color: var(--color-slate-400);
+  background-color: var(--color-slate-900);
+  padding-block: 48px;
+  padding-inline: 36px;
 }
 
 .layout h4 {
-    color: white;
-    margin-block-end: 16px;
+  color: white;
+  margin-block-end: 16px;
 }
 
 .layout p {
-    color: var(--color-slate-400)
+  color: var(--color-slate-400);
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: start;
-    /* grid-template-rows: auto auto; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: start;
+  /* grid-template-rows: auto auto;
     grid-template-areas:
         "About Menu Contact"
         "Rights Rights Rights";  */
 }
 
-.about img { 
-    /* grid-area: About;  */
-    display: block;
-    margin-block-end: 16px;
-
+.about img {
+  /* grid-area: About;  */
+  display: block;
+  margin-block-end: 16px;
 }
 
 .about p {
-    display: inline-block;
-    line-height: 22px;
-    width: 320px;
-    margin: auto;
+  display: inline-block;
+  line-height: 22px;
+  width: 320px;
+  margin: auto;
 }
 
 .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu li {
-    color: var(--color-slate-400);
-    margin-block-end: 8px;
+  color: var(--color-slate-400);
+  margin-block-end: 8px;
+}
+
+.menu a {
+  color: var(--color-slate-400);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: white;
 }
 
 .menu a {
@@ -64,25 +73,44 @@
 }
 
 .contactsList {
-    display: flex;
-    gap: 16px;
-    list-style: none;
+  display: flex;
+  gap: 16px;
+  list-style: none;
 }
 
 .socialButton {
-    width: 36px;
-    height: 36px;
-    font-size: 20px;
-    border: 1px solid var(--color-slate-800);
-    border-radius: 10px;
-    background-color: var(--color-slate-800);
-    color: var(--color-slate-400);
-    padding: 8px;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  border: 1px solid var(--color-slate-800);
+  border-radius: 10px;
+  background-color: var(--color-slate-800);
+  color: var(--color-slate-400);
+  padding: 8px;
 }
 
-.rights { 
-    text-align: center;
-    padding-block: 10px;
-    margin-block-start: 48px;
-    border-top: 1px solid var(--color-slate-800);
+.rights {
+  text-align: center;
+  padding-block: 10px;
+  margin-block-start: 48px;
+  border-top: 1px solid var(--color-slate-800);
+}
+
+@media (max-width: 767px) {
+  .layout {
+    padding: 40px 20px;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .about p {
+    width: auto;
+    max-width: 320px;
+    margin: 0;
+  }
+  .socialButton {
+    display: grid;
+    place-items: center;
+  }
 }

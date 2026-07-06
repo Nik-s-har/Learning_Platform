@@ -1,12 +1,12 @@
 .container {
-    background-color: var(--bg-sky-color);
+  background-color: var(--bg-sky-color);
 }
 
 .content {
-    /* background-color: var(--bg-sky-color); */
-    max-width: 880px;
-    margin-inline: auto;
-    padding-block: 48px;
+  /* background-color: var(--bg-sky-color); */
+  max-width: 880px;
+  margin-inline: auto;
+  padding-block: 48px;
 }
 
 .header {
@@ -24,7 +24,7 @@
 }
 
 .header h2 {
-    margin-block-end: 16px;
+  margin-block-end: 16px;
 }
 
 .courseTitle {
@@ -72,10 +72,20 @@
     flex-direction: column;
     gap: 48px;
 
+.workbookButton:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+.alphabetRoadmap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .alphabetRoadmap::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   bottom: 0;
