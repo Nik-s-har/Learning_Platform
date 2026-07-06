@@ -11,8 +11,8 @@
   margin: 0 auto;
   box-shadow:
     0 10px 32px rgba(0, 0, 0, 0.2),
-    0 2px 8px rgba(0, 0, 0, 0.08),
-    /* 0 10px 15px rgba(0, 0, 0, 0.2); */
+    0 2px 8px rgba(0, 0, 0, 0.08);
+  /* 0 10px 15px rgba(0, 0, 0, 0.2); */
 }
 
 .title {
@@ -38,4 +38,19 @@
   font-size: 1rem;
   line-height: 1.5;
   margin: 0;
+}
+
+@media (max-width: 767px) {
+  .container {
+    gap: 20px;
+    padding: 20px 14px;
+    border-radius: 24px;
+  }
+  .title {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .iframe {
+    min-height: 420px;
+  }
 }

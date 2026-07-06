@@ -13,14 +13,10 @@ export function AlphabetRoadmap() {
     alphabetTextbooks[textbook];
 
   return (
-    <main className={styles.conteiner}>
+    <main className={styles.container}>
       <div className={styles.content}>
         <section className={styles.header}>
-          <img
-            className={styles.mapImage}
-            src={mapImage}
-            alt={menuLabel}
-          />
+          <img className={styles.mapImage} src={mapImage} alt={menuLabel} />
           <h2 className={styles.courseTitle}>
             Вводный курс к{' '}
             <span

@@ -1,14 +1,31 @@
 .container {
-    display: flex;
-    align-items: center;
-    gap: 32px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 
 .emptyBlock {
-    width: 384px;
-    height: 0px;
+  width: 384px;
+  height: 0px;
 }
 
 .reversed {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 767px) {
+  .container,
+  .reversed {
+    position: relative;
     flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+  .emptyBlock {
+    display: none;
+  }
+  .container > :nth-child(2) {
+    flex: 0 0 48px;
+    z-index: 1;
+  }
 }

@@ -1,18 +1,27 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; 
-    gap: 10px;
-    width: 320px;
-    height: 206px;
-    border-radius: 24px;
-    background-color: color-mix(in oklab, white 10%, transparent);
-    color: white;
-    padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  width: 320px;
+  height: 206px;
+  border-radius: 24px;
+  background-color: color-mix(in oklab, white 10%, transparent);
+  color: white;
+  padding: 32px;
 }
 
 .container p {
-    color: white;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    height: auto;
+    min-height: 160px;
+    padding: 24px 20px;
+  }
 }
