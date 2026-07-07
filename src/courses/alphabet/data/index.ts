@@ -1,6 +1,6 @@
 import type { CourseData } from '@app-types/lesson';
-import mapSpotlight from '@assets/pictures/MapSpotlight  .png';
-import mapStarlight from '@assets/pictures/MapStarlight  .png';
+import mapSpotlight from '@assets/pictures/MapSpotlight.jpg';
+import mapStarlight from '@assets/pictures/MapStarlight.jpg';
 import { alphabetCourseData } from './alphabetLessons';
 import { spotlightLessons } from './spotlightLessons';
 

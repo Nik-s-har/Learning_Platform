@@ -53,15 +53,13 @@
   }
   .container nav {
     width: 100%;
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-  .container nav::-webkit-scrollbar {
-    display: none;
   }
   .menuList {
-    width: max-content;
+    width: 100%;
     gap: 8px;
+  }
+  .menuItem {
+    flex: 1;
   }
   .menuItem a {
     display: block;
@@ -69,6 +67,6 @@
     border-radius: 999px;
     background: var(--color-sky-50);
     font-size: 14px;
-    white-space: nowrap;
+    text-align: center;
   }
 }
