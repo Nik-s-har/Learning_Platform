@@ -55,6 +55,14 @@ function Footer() {
               </a>
             </li>
           </ul>
+          <a
+            href="https://yoomoney.ru/to/4100119570310935"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.donateButton}
+          >
+            ❤️ Поддержать проект
+          </a>
         </nav>
       </div>
       
