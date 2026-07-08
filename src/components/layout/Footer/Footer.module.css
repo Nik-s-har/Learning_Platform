@@ -58,8 +58,18 @@
   color: white;
 }
 
-.contact {
-  /* grid-area: Contact;  */
+.menu a {
+    color: var(--color-slate-400);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.contact { 
+    /* grid-area: Contact;  */
 }
 
 .contactsList {
@@ -77,23 +87,6 @@
   background-color: var(--color-slate-800);
   color: var(--color-slate-400);
   padding: 8px;
-}
-
-.layout .donateButton,
-.layout .donateButton:visited {
-  display: inline-block;
-  margin-block-start: 20px;
-  padding: 10px 16px;
-  border-radius: 10px;
-  background-color: var(--color-slate-800);
-  color: #fff;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.layout .donateButton:hover {
-  background-color: var(--color-slate-400);
-  color: #fff;
 }
 
 .rights {

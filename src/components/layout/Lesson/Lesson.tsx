@@ -23,7 +23,21 @@ export interface LessonProps {
 
 function Lesson(props: LessonProps) {
   const navigate = useNavigate();
-  const { lessonId, stepState, activeStep, type, src, aboutLesson, onComplete, onSelectStep, onBack, courseMapHref, nextLessonHref, isLastStep, submitLabel } = props;
+  const {
+    lessonId,
+    stepState,
+    activeStep,
+    type,
+    src,
+    aboutLesson,
+    onComplete,
+    onSelectStep,
+    onBack,
+    courseMapHref,
+    nextLessonHref,
+    isLastStep,
+    submitLabel,
+  } = props;
 
   const lessonActions = isLastStep ? (
     <div className={styles.lessonActions}>
@@ -72,7 +86,11 @@ function Lesson(props: LessonProps) {
   return (
     <main className={styles.main}>
       <header className={styles.header}>
-        <StepProgressBar stepState={stepState} activeStep={activeStep} onSelectStep={onSelectStep} />
+        <StepProgressBar
+          stepState={stepState}
+          activeStep={activeStep}
+          onSelectStep={onSelectStep}
+        />
         <h3>Урок {lessonId}</h3>
       </header>
       {lessonContent[type]}

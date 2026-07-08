@@ -11,8 +11,8 @@ function Footer() {
         <div className={styles.about}>
           <img src={Logo} alt="Logo" />
           <p>
-            Интерактивная платформа для детей, которая превращает изучение
-            школьного английского в увлекательное приключение.
+            Интерактивная платформа для детей, которая превращает
+            изучение школьного английского в увлекательное приключение.
           </p>
         </div>
         <nav>
@@ -55,16 +55,9 @@ function Footer() {
               </a>
             </li>
           </ul>
-          <a
-            href="https://yoomoney.ru/to/4100119570310935"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.donateButton}
-          >
-            ❤️ Поддержать проект
-          </a>
         </nav>
       </div>
+      
     </footer>
   );
 }
