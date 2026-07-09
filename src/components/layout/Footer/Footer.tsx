@@ -65,7 +65,12 @@ function Footer() {
           </a>
         </nav>
       </div>
-      
+      <div className={styles.rights}>
+        <Link to="/privacy" className={styles.privacyLink}>
+          Политика конфиденциальности
+        </Link>
+        <span> · © {new Date().getFullYear()} Smart Tutor Kids</span>
+      </div>
     </footer>
   );
 }

@@ -113,6 +113,17 @@
   border-top: 1px solid var(--color-slate-800);
 }
 
+.rights .privacyLink,
+.rights .privacyLink:visited {
+  color: var(--color-slate-400);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.rights .privacyLink:hover {
+  color: white;
+}
+
 @media (max-width: 767px) {
   .layout {
     padding: 40px 20px;
