@@ -1,0 +1,135 @@
+.pool {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9px;
+  padding: 16px;
+  background: var(--color-sky-50);
+  border-radius: 18px;
+  min-height: 82px;
+  margin-bottom: 18px;
+}
+
+.token {
+  padding: 11px 15px;
+  border: 2px solid var(--color-sky-500);
+  border-radius: 12px;
+  background: white;
+  color: var(--color-slate-800);
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: grab;
+  touch-action: none;
+  transition:
+    border-color 0.15s,
+    background 0.15s;
+}
+
+.token:focus-visible {
+  outline: 3px solid var(--color-sky-300);
+  outline-offset: 2px;
+}
+
+.selected {
+  border-color: var(--accent-color);
+  background: var(--color-yellow-100);
+}
+
+.dragging {
+  opacity: 0.35;
+}
+
+.overlayToken {
+  cursor: grabbing;
+  box-shadow: 0 10px 24px rgba(23, 52, 92, 0.28);
+  transform: rotate(-2deg);
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(var(--sort-columns, 3), minmax(0, 1fr));
+  gap: 8px;
+}
+
+.head {
+  text-align: center;
+  color: var(--color-sky-800);
+  font-weight: 800;
+  padding: 8px;
+}
+
+.cell {
+  min-height: 64px;
+  border: 2px dashed var(--color-sky-300);
+  border-radius: 14px;
+  padding: 7px;
+  background: var(--color-sky-50);
+  display: grid;
+  place-items: center;
+}
+
+.over {
+  background: var(--color-sky-100);
+  border-color: var(--color-sky-500);
+  border-style: solid;
+}
+
+.rejected {
+  border-color: var(--color-pink-500);
+  background: var(--color-pink-100);
+}
+
+.cellValue {
+  width: 100%;
+  text-align: center;
+  padding: 11px 5px;
+  border-radius: 12px;
+  border: 2px solid var(--color-green-400);
+  background: var(--color-green-100);
+  color: var(--color-slate-800);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.fixed {
+  border-color: var(--color-slate-200);
+  background: white;
+}
+
+.hint {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-color);
+  margin: 14px 0 0;
+}
+
+@media (max-width: 780px) {
+  .pool {
+    gap: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .token,
+  .cellValue {
+    padding: 7px 5px;
+    font-size: 12px;
+    border-radius: 9px;
+  }
+
+  .head {
+    font-size: 11px;
+    padding: 4px;
+  }
+
+  .table {
+    gap: 5px;
+  }
+
+  .cell {
+    min-height: 48px;
+    padding: 3px;
+    border-radius: 10px;
+  }
+}

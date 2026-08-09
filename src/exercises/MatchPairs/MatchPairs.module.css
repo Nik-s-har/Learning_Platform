@@ -1,0 +1,76 @@
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  height: 112px;
+  border: 2px solid var(--border-color);
+  border-radius: 15px;
+  background: white;
+  padding: 16px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-size: 18px;
+  font-family: inherit;
+  color: var(--color-slate-800);
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: 0.15s;
+}
+
+.card:hover:not(:disabled) {
+  border-color: var(--color-sky-500);
+}
+
+.active {
+  border-color: var(--color-sky-500);
+  background: var(--color-sky-100);
+}
+
+.matched {
+  border-color: var(--color-green-500);
+  background: var(--color-green-100);
+  cursor: default;
+}
+
+.wrong {
+  border-color: var(--color-pink-500);
+  background: var(--color-pink-100);
+  animation: shake 0.25s;
+}
+
+@keyframes shake {
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+@media (max-width: 780px) {
+  .board {
+    gap: 7px;
+  }
+
+  .column {
+    gap: 7px;
+  }
+
+  .card {
+    height: 56px;
+    padding: 2px 5px;
+    font-size: 15px;
+    overflow: hidden;
+    border-radius: 11px;
+  }
+}

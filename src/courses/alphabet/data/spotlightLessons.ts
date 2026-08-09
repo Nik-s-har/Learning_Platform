@@ -108,8 +108,6 @@ export const spotlightLessons: CourseData = [
         src: 'https://wordwall.net/embed/ef3bd5aaa7cc499f83ae1606f5ef1538?themeId=1&templateId=36&fontStackId=0',
         aboutLesson: 'Вставь в слово правильную букву',
       },
-      
-
       {
         title: 'Упражнение 4',
         type: 'exercise',

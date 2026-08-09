@@ -3,6 +3,7 @@ import Layout from '@layout/Layout/Layout';
 import { MainPage } from './pages/MainPage/MainPage';
 import { PrivacyPage } from './pages/PrivacyPage/PrivacyPage';
 import { alphabetRoutes } from '@alphabet/routes.tsx';
+import { trainerRoutes } from '@trainers/routes.tsx';
 
 const router = createBrowserRouter([
   {
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
       { path: '/', element: <MainPage /> },
       { path: '/privacy', element: <PrivacyPage /> },
       ...alphabetRoutes,
+      ...trainerRoutes,
     ],
   },
 ]);
