@@ -1,0 +1,15 @@
+.line {
+  min-height: 31px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 12px 0;
+}
+
+.good {
+  color: var(--color-green-600);
+}
+
+.bad {
+  color: var(--color-pink-500);
+}

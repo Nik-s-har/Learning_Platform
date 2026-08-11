@@ -46,10 +46,17 @@ function AlphabetLesson() {
     }
   };
 
-  const courseMapHref = isTextbookSlug(textbook) ? `/alphabet/${textbook}` : undefined;
-  const currentLessonIndex = courseData?.findIndex((item) => item.id === lessonIdNum) ?? -1;
-  const nextLesson = currentLessonIndex >= 0 ? courseData?.[currentLessonIndex + 1] : undefined;
-  const nextLessonHref = isTextbookSlug(textbook) && nextLesson ? `/alphabet/${textbook}/lesson/${nextLesson.id}` : undefined;
+  const courseMapHref = isTextbookSlug(textbook)
+    ? `/alphabet/${textbook}`
+    : undefined;
+  const currentLessonIndex =
+    courseData?.findIndex((item) => item.id === lessonIdNum) ?? -1;
+  const nextLesson =
+    currentLessonIndex >= 0 ? courseData?.[currentLessonIndex + 1] : undefined;
+  const nextLessonHref =
+    isTextbookSlug(textbook) && nextLesson
+      ? `/alphabet/${textbook}/lesson/${nextLesson.id}`
+      : undefined;
 
   return (
     <Lesson

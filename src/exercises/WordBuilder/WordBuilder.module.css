@@ -1,0 +1,98 @@
+.slots {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.slot {
+  background: var(--color-sky-50);
+  border: 2px solid var(--border-color);
+  padding: 18px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.slotLabel {
+  display: block;
+  font-size: 13px;
+  color: var(--text-color);
+  margin-bottom: 7px;
+}
+
+.slotValue {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-slate-800);
+}
+
+.target {
+  border-color: var(--accent-color);
+  background: var(--color-yellow-100);
+}
+
+.target .slotValue {
+  min-height: 29px;
+  display: block;
+  letter-spacing: 2px;
+}
+
+.zone {
+  min-height: 72px;
+  border: 3px dashed var(--color-sky-500);
+  border-radius: 18px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.tile {
+  width: 46px;
+  height: 46px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--accent-color);
+  color: var(--color-slate-800);
+  font-size: 22px;
+  font-weight: 800;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 4px 0 var(--color-yellow-500);
+}
+
+.tile:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 var(--color-yellow-500);
+}
+
+.placed {
+  background: var(--color-sky-100);
+  box-shadow: 0 4px 0 var(--color-sky-300);
+}
+
+.placed:active {
+  box-shadow: 0 1px 0 var(--color-sky-300);
+}
+
+.hint {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-color);
+  margin: 0;
+}
+
+@media (max-width: 780px) {
+  .slots {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .slot {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,49 @@
+.picture {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  line-height: 1;
+}
+
+.picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.sm {
+  width: 28px;
+  height: 28px;
+  font-size: 22px;
+}
+
+.md {
+  width: 74px;
+  height: 64px;
+  font-size: 46px;
+}
+
+.lg {
+  width: 138px;
+  height: 116px;
+  font-size: 68px;
+  border-radius: 28px;
+  background: white;
+  border: 2px solid rgba(255, 201, 40, 0.55);
+  box-shadow: 0 8px 22px rgba(23, 52, 92, 0.12);
+}
+
+.lg img {
+  width: 70%;
+  height: 70%;
+}
+
+@media (max-width: 780px) {
+  .md {
+    width: 34px;
+    height: 28px;
+    font-size: 24px;
+  }
+}

@@ -42,7 +42,6 @@ export const spotlightLessons: CourseData = [
         src: 'https://wordwall.net/embed/d76e6b8fcdfb4249b4971e12646bf713?themeId=1&templateId=3&fontStackId=0',
         aboutLesson: 'Соедини картинку и букву',
       },
-    
 
       {
         title: 'Упражнение 4',
@@ -54,16 +53,18 @@ export const spotlightLessons: CourseData = [
         title: 'Видео 4',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L1_ex5.mp4'),
-        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
+        aboutLesson:
+          'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
       },
 
       {
         title: 'Упражнение 5',
         type: 'exercise',
         src: 'https://wordwall.net/embed/95aa480820c64793b23750b9bc6bc2a6?themeId=62&templateId=70&fontStackId=21',
-        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
+        aboutLesson:
+          'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
       },
-      
+
       {
         title: 'Упражнение 6',
         type: 'exercise',
@@ -108,8 +109,6 @@ export const spotlightLessons: CourseData = [
         src: 'https://wordwall.net/embed/ef3bd5aaa7cc499f83ae1606f5ef1538?themeId=1&templateId=36&fontStackId=0',
         aboutLesson: 'Вставь в слово правильную букву',
       },
-      
-
       {
         title: 'Упражнение 4',
         type: 'exercise',
@@ -183,8 +182,6 @@ export const spotlightLessons: CourseData = [
         aboutLesson: 'Прочитай слова',
       },
 
-    
-    
       {
         title: 'Упражнение 5',
         type: 'exercise',
@@ -240,7 +237,8 @@ export const spotlightLessons: CourseData = [
         title: 'Видео 3',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L4_ex5.mp4'),
-        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
+        aboutLesson:
+          'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
       },
       {
         title: 'Упражнение 5',
@@ -252,7 +250,8 @@ export const spotlightLessons: CourseData = [
         title: 'Видео 4',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L4_ex6.mp4'),
-        aboutLesson: 'Прочитай предложение. Выполни упражнение 6 в рабочей тетради',
+        aboutLesson:
+          'Прочитай предложение. Выполни упражнение 6 в рабочей тетради',
       },
 
       {
@@ -286,7 +285,8 @@ export const spotlightLessons: CourseData = [
         title: 'Упражнение 3',
         type: 'exercise',
         src: 'https://wordwall.net/embed/a9c4180e36b64b9a8308e6edfcae5944?themeId=1&templateId=5&fontStackId=0',
-        aboutLesson: 'Выбери лишнее слово. Выполни упражнение 4 в рабочей тетради, а потом сделай это задание и проверь',
+        aboutLesson:
+          'Выбери лишнее слово. Выполни упражнение 4 в рабочей тетради, а потом сделай это задание и проверь',
       },
     ],
   },
@@ -345,7 +345,8 @@ export const spotlightLessons: CourseData = [
         title: 'Видео 3',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L6_ex5.mp4'),
-        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
+        aboutLesson:
+          'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
       },
       {
         title: 'Упражнение 6',
@@ -357,7 +358,8 @@ export const spotlightLessons: CourseData = [
         title: 'Видео 4',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L6_ex6.mp4'),
-        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 6 в рабочей тетради',
+        aboutLesson:
+          'Послушай и прочитай слова. Выполни упражнение 6 в рабочей тетради',
       },
 
       {
@@ -390,7 +392,8 @@ export const spotlightLessons: CourseData = [
         title: 'Видео 1',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L7_ex3.mp4'),
-        aboutLesson: 'Послушай и прочитай предложения. Выполни упражнение 3 в рабочей тетради',
+        aboutLesson:
+          'Послушай и прочитай предложения. Выполни упражнение 3 в рабочей тетради',
       },
       {
         title: 'Упражнение 2',
@@ -452,7 +455,8 @@ export const spotlightLessons: CourseData = [
         title: 'Видео 3',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L8_ex5.mp4'),
-        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
+        aboutLesson:
+          'Послушай и прочитай слова. Выполни упражнение 5 в рабочей тетради',
       },
       {
         title: 'Упражнение 4',
@@ -477,7 +481,8 @@ export const spotlightLessons: CourseData = [
         title: 'Видео 4',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L8_ex6.mp4'),
-        aboutLesson: 'Прочитай предложения. Выполни упражнение 6 в рабочей тетради',
+        aboutLesson:
+          'Прочитай предложения. Выполни упражнение 6 в рабочей тетради',
       },
       {
         title: 'Упражнение 7',
@@ -640,7 +645,6 @@ export const spotlightLessons: CourseData = [
     image: ABC,
     content: 'Повторяем A-T',
     steps: [
-      
       {
         title: 'Видео 1',
         type: 'video',
@@ -705,7 +709,8 @@ export const spotlightLessons: CourseData = [
         title: 'Видео 1',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L13_ex2.mp4'),
-        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 2 в рабочей тетради',
+        aboutLesson:
+          'Послушай и прочитай слова. Выполни упражнение 2 в рабочей тетради',
       },
       {
         title: 'Упражнение 2 ',
@@ -717,7 +722,8 @@ export const spotlightLessons: CourseData = [
         title: 'Видео 2',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L13_ex3.mp4'),
-        aboutLesson: 'Послушай и прочитай слова. Выполни упражнение 3 в рабочей тетради',
+        aboutLesson:
+          'Послушай и прочитай слова. Выполни упражнение 3 в рабочей тетради',
       },
       {
         title: 'Упражнение 3 ',
@@ -729,7 +735,8 @@ export const spotlightLessons: CourseData = [
         title: 'Видео 3',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/L13_ex4.mp4'),
-        aboutLesson: 'Послушай и прочитай предложения. Выполни упражнение 4 в рабочей тетради',
+        aboutLesson:
+          'Послушай и прочитай предложения. Выполни упражнение 4 в рабочей тетради',
       },
     ],
   },
@@ -751,7 +758,7 @@ export const spotlightLessons: CourseData = [
         src: 'https://wordwall.net/embed/f52ecf145f3745baae67958f7153e6ed?themeId=1&templateId=3&fontStackId=0',
         aboutLesson: 'Соедини слово и картинку',
       },
-     {
+      {
         title: 'Видео 2',
         type: 'video',
         src: mediaUrl('courses/introduction/starlight/video/SL14_ex002.mp4'),
@@ -796,14 +803,13 @@ export const spotlightLessons: CourseData = [
         src: 'https://wordwall.net/embed/fb459e519be34c34abf1056dc43dac4b?themeId=1&templateId=46&fontStackId=0',
         aboutLesson: 'Выбери слово, которое рифмуется',
       },
-      
+
       {
         title: 'Упражнение 2 ',
         type: 'exercise',
         src: 'https://wordwall.net/embed/1cca792138e64019a069c5b7c4c61864?themeId=1&templateId=5&fontStackId=0',
         aboutLesson: 'Прочитай вопрос и выбери правильный ответ',
       },
-      
     ],
   },
 ];
