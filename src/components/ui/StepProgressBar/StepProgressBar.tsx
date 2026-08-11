@@ -7,7 +7,11 @@ interface StepProgressBarProps {
   onSelectStep?: (stepIndex: number) => void;
 }
 
-function StepProgressBar({ stepState, activeStep, onSelectStep }: StepProgressBarProps) {
+function StepProgressBar({
+  stepState,
+  activeStep,
+  onSelectStep,
+}: StepProgressBarProps) {
   return (
     <div className={styles.container}>
       {stepState.map((item, index) => (

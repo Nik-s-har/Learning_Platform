@@ -30,6 +30,7 @@ const ROUND_END_MS = 450;
 interface RoundState {
   /** Ключ ячейки → значение, которое в неё поставили. */
   placements: Record<string, string>;
+  usedTokenIds: string[];
   selectedTokenId: string | null;
   rejectedCellId: string | null;
   feedback: FeedbackState;
@@ -38,6 +39,7 @@ interface RoundState {
 
 const EMPTY_ROUND: RoundState = {
   placements: {},
+  usedTokenIds: [],
   selectedTokenId: null,
   rejectedCellId: null,
   feedback: 'idle',
@@ -99,13 +101,19 @@ function SortTable({
     [rows],
   );
 
-  const pool = tokens.filter((token) => !(token.id in round.placements));
+  const pool = tokens.filter((token) => !round.usedTokenIds.includes(token.id));
   const activeToken = tokens.find((token) => token.id === activeTokenId);
 
   const place = (token: SortToken, targetCellId: string) => {
     if (targetCellId in round.placements) return;
 
-    if (token.id !== targetCellId) {
+    const targetCell = batch
+      .find((row) => row.id === token.rowId)
+      ?.cells.find(
+        (cell) => cellKey(token.rowId, cell.columnId) === targetCellId,
+      );
+
+    if (!targetCell || token.value !== targetCell.value) {
       setRound((current) => ({
         ...current,
         feedback: 'bad',
@@ -124,6 +132,7 @@ function SortTable({
     setRound((current) => ({
       ...current,
       placements,
+      usedTokenIds: [...current.usedTokenIds, token.id],
       selectedTokenId: null,
       feedback: 'good',
     }));

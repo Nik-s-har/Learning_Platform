@@ -40,12 +40,20 @@ function Alphabet() {
         ))}
       </div>
       <div className={styles.buttonGroup}>
-        <Link to="/alphabet/starlight" style={{ textDecoration: 'none' }} onClick={handleCourseClick}>
+        <Link
+          to="/alphabet/starlight"
+          style={{ textDecoration: 'none' }}
+          onClick={handleCourseClick}
+        >
           <Button variant="primary" colorScheme="yellowBlack">
             Вводный курс к Starlight
           </Button>
         </Link>
-        <Link to="/alphabet/spotlight" style={{ textDecoration: 'none' }} onClick={handleCourseClick}>
+        <Link
+          to="/alphabet/spotlight"
+          style={{ textDecoration: 'none' }}
+          onClick={handleCourseClick}
+        >
           <Button variant="primary" colorScheme="yellowBlack">
             Вводный курс к Spotlight
           </Button>

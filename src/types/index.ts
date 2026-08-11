@@ -1,1 +1,6 @@
-export type { LessonStepData, LessonData, CourseData, LessonStatus } from './lesson';
+export type {
+  LessonStepData,
+  LessonData,
+  CourseData,
+  LessonStatus,
+} from './lesson';
