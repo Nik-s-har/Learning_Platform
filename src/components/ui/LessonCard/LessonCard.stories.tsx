@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import AlphabetCard from './LessonCard';
-import Tort from '@assets/pictures/tort-48x64.png';
+import ABC from '@assets/pictures/ABC.png';
 
 const meta: Meta<typeof AlphabetCard> = {
   title: 'UI/AlphabetCard',
@@ -35,7 +35,7 @@ export const Lock: Story = {
   render: withHoverWrapper,
   args: {
     title: 'Урок 1',
-    image: Tort,
+    image: ABC,
     content: 'Начинаем изучение алфавита.',
     variant: 'lock',
   },
@@ -45,7 +45,7 @@ export const Unlock: Story = {
   render: withHoverWrapper,
   args: {
     title: 'Урок 2',
-    image: Tort,
+    image: ABC,
     content: 'Продолжаем изучение алфавита.',
     variant: 'unlock',
   },
@@ -55,7 +55,7 @@ export const Done: Story = {
   render: withHoverWrapper,
   args: {
     title: 'Урок 3',
-    image: Tort,
+    image: ABC,
     content: 'Повторяем изученный материал.',
     variant: 'done',
   },
