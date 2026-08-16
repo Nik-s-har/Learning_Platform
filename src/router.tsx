@@ -5,16 +5,19 @@ import { PrivacyPage } from './pages/PrivacyPage/PrivacyPage';
 import { alphabetRoutes } from '@alphabet/routes.tsx';
 import { trainerRoutes } from '@trainers/routes.tsx';
 
-const router = createBrowserRouter([
-  {
-    element: <Layout />,
-    children: [
-      { path: '/', element: <MainPage /> },
-      { path: '/privacy', element: <PrivacyPage /> },
-      ...alphabetRoutes,
-      ...trainerRoutes,
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      element: <Layout />,
+      children: [
+        { path: '/', element: <MainPage /> },
+        { path: '/privacy', element: <PrivacyPage /> },
+        ...alphabetRoutes,
+        ...trainerRoutes,
+      ],
+    },
+  ],
+  { basename: import.meta.env.BASE_URL },
+);
 
 export default router;
