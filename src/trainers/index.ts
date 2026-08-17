@@ -7,6 +7,7 @@ export interface TrainerMeta {
   menuLabel: string;
   title: string;
   description: string;
+  cardImage: string;
 }
 
 /**

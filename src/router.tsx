@@ -4,6 +4,7 @@ import { MainPage } from './pages/MainPage/MainPage';
 import { PrivacyPage } from './pages/PrivacyPage/PrivacyPage';
 import { alphabetRoutes } from '@alphabet/routes.tsx';
 import { trainerRoutes } from '@trainers/routes.tsx';
+import { GamePage } from '@pages/GamePage/GamePage';
 
 const router = createBrowserRouter(
   [
@@ -12,6 +13,7 @@ const router = createBrowserRouter(
       children: [
         { path: '/', element: <MainPage /> },
         { path: '/privacy', element: <PrivacyPage /> },
+        { path: '/games', element: <GamePage /> },
         ...alphabetRoutes,
         ...trainerRoutes,
       ],

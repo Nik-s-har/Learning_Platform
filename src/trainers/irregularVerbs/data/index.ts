@@ -1,3 +1,5 @@
+import irregularVerbsCard from '@assets/pictures/trainers/irregular-verbs.png';
+
 export { verbs, verbGrades, verbByInfinitive } from './verbs';
 export { getVerbMedia } from './media';
 export type { VerbMedia } from './media';
@@ -19,4 +21,5 @@ export const irregularVerbsTrainer = {
   title: 'Тренажёр неправильных глаголов',
   description:
     'Восемь упражнений на формы неправильных глаголов: карточки, пары, сортировка, мемори и другие.',
+  cardImage: irregularVerbsCard,
 };
