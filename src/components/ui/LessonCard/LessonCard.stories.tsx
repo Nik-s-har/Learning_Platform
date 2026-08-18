@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
+import type { ComponentProps } from 'react';
 import AlphabetCard from './LessonCard';
 import ABC from '@assets/pictures/ABC.png';
 
@@ -18,7 +19,7 @@ export default meta;
 type Story = StoryObj<typeof AlphabetCard>;
 
 // Функция для обертки карточки с padding и overflow: visible
-const withHoverWrapper = (args: any) => (
+const withHoverWrapper = (args: ComponentProps<typeof AlphabetCard>) => (
   <div
     style={{
       padding: '50px',
