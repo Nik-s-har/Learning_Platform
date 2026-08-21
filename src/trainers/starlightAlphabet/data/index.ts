@@ -1,4 +1,4 @@
-import starlightAlphabetCard from '@assets/pictures/trainers/starlight-intro.png';
+import starlightAlphabetCard from '@assets/pictures/trainers/starlight-intro.webp';
 
 export const STARLIGHT_ALPHABET_PATH = '/trainers/starlight-alphabet';
 

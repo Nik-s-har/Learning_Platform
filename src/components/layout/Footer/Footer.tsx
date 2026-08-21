@@ -27,6 +27,9 @@ function Footer() {
             <li>
               <Link to="/alphabet/spotlight">Вводный курс к Spotlight</Link>
             </li>
+            <li>
+              <Link to="/games">Игры и тренажёры</Link>
+            </li>
           </ul>
         </nav>
         <nav className={styles.contacts}>

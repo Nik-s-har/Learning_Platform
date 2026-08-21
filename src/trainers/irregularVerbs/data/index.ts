@@ -1,4 +1,4 @@
-import irregularVerbsCard from '@assets/pictures/trainers/irregular-verbs.png';
+import irregularVerbsCard from '@assets/pictures/trainers/irregular-verbs.webp';
 
 export { verbs, verbGrades, verbByInfinitive } from './verbs';
 export { getVerbMedia } from './media';

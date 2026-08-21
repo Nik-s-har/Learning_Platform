@@ -51,6 +51,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   max-width: 1120px;
   margin-inline: auto;
@@ -59,11 +60,6 @@
 }
 
 @media (max-width: 767px) {
-  .layout {
-    padding-block: 32px;
-    padding-inline: 16px;
-  }
-
   .header {
     height: auto;
     min-height: 180px;
@@ -89,6 +85,7 @@
   }
 
   .container {
+    flex-direction: column;
     gap: 16px;
   }
 }

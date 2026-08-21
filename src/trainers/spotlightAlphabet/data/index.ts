@@ -1,4 +1,4 @@
-import spotlightAlphabetCard from '@assets/pictures/trainers/spotlight-alphabet.png';
+import spotlightAlphabetCard from '@assets/pictures/trainers/spotlight-intro.webp';
 
 export const SPOTLIGHT_ALPHABET_PATH = '/trainers/spotlight-alphabet';
 
