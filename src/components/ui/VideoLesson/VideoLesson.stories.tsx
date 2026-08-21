@@ -4,7 +4,9 @@ import type { VideoLessonProps } from './VideoLesson';
 import '../../../styles/global.css';
 import '../../../styles/fonts.css';
 import '../../../styles/color.css';
-import videoFile from '/courses/alphabet/video/ABCD.mp4';
+import { mediaUrl } from '@utils/index';
+
+const videoFile = mediaUrl('courses/introduction/starlight/video/L1_ex1.mp4');
 
 const meta: Meta<VideoLessonProps> = {
   title: 'Layout/VideoLesson',

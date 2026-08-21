@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import CourseStep from './CourseStep';
-import Tort from '@assets/pictures/tort-48x64.png';
+import ABC from '@assets/pictures/ABC.png';
 
 const meta: Meta<typeof CourseStep> = {
   title: 'Layout/CourseStep',
@@ -24,7 +24,7 @@ export const Default: Story = {
     lesson: {
       id: 1,
       title: 'Урок 1',
-      image: Tort,
+      image: ABC,
       content: 'Первые шаги в алфавите',
     },
     status: 'unlock',

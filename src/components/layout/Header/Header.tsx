@@ -1,6 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import { alphabetTextbooks } from '@alphabet/data';
-import { trainers } from '@trainers/index';
 import styles from './Header.module.css';
 import Logo from '@assets/pictures/logosmart.svg';
 
@@ -13,16 +11,15 @@ function Header() {
           <li className={styles.menuItem}>
             <NavLink to="/">Главная</NavLink>
           </li>
-          {Object.entries(alphabetTextbooks).map(([slug, { menuLabel }]) => (
-            <li key={slug} className={styles.menuItem}>
-              <NavLink to={`/alphabet/${slug}`}>{menuLabel}</NavLink>
-            </li>
-          ))}
-          {trainers.map((trainer) => (
-            <li key={trainer.slug} className={styles.menuItem}>
-              <NavLink to={trainer.path}>{trainer.menuLabel}</NavLink>
-            </li>
-          ))}
+          <li className={styles.menuItem}>
+            <NavLink to="/alphabet/starlight">Вводный курс к Starlight</NavLink>
+          </li>
+          <li className={styles.menuItem}>
+            <NavLink to="/alphabet/spotlight">Вводный курс к Spotlight</NavLink>
+          </li>
+          <li className={styles.menuItem}>
+            <NavLink to="/games">Игры и тренажёры</NavLink>
+          </li>
         </ul>
       </nav>
     </header>
