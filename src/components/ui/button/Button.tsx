@@ -10,7 +10,8 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
     | 'yellowBlack'
     | 'greyBlue'
     | 'slateSlate'
-    | 'greenWhite';
+    | 'greenWhite'
+    | 'orangeWhite';
   className?: string;
 }
 

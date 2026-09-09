@@ -24,7 +24,9 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  background: var(--color-green-600);
+  /* Акцент темы учебника наследуется от .layout в TextbookPage.
+     Fallback — для Storybook и любого использования вне страницы. */
+  background: var(--textbook-accent, var(--color-green-600));
   color: white;
   border-radius: 16px 16px 0 0;
 }

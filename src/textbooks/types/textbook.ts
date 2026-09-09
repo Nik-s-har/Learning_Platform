@@ -45,6 +45,9 @@ export interface GradeData {
   modules: ModuleData[];
 }
 
+/** Цветовая тема страницы учебника. Ключ → блок [data-theme] в TextbookPage. */
+export type TextbookTheme = 'starlight' | 'spotlight';
+
 export interface TextbookData {
   /** сегмент в URL: 'starlight' */
   slug: string;
@@ -55,4 +58,5 @@ export interface TextbookData {
   grades: GradeData[];
   /** какой класс открыт по умолчанию */
   defaultGrade: number;
+  theme: TextbookTheme;
 }

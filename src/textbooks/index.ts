@@ -7,10 +7,12 @@ import type {
 } from '@textbooks/types/textbook';
 import { TOPIC_CATEGORIES } from '@textbooks/types/textbook';
 import { starlightTextbook } from './data/starlight';
+import { spotlightTextbook } from './data/spotlight';
 
 // Реестр учебников. Страница и роуты одни на всех, меняется только контент.
 export const textbooks = {
   starlight: starlightTextbook,
+  spotlight: spotlightTextbook,
 } satisfies Record<string, TextbookData>;
 
 export type TextbookSlug = keyof typeof textbooks;

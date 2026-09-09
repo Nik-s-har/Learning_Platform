@@ -90,3 +90,9 @@
   color: white;
   border-color: var(--color-green-500);
 }
+
+.orangeWhite {
+  background-color: var(--color-orange-500);
+  color: white;
+  border-color: var(--color-orange-500);
+}

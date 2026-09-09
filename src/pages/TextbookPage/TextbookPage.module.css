@@ -1,5 +1,15 @@
+/* Цвета темы учебника. Значения по умолчанию — Starlight;
+   каждый следующий учебник добавляет свой блок [data-theme]. */
 .layout {
+  --textbook-accent: var(--color-green-600);
+  --textbook-header-from: var(--textbook-accent);
+  --textbook-header-to: var(--color-emerald-500);
   background-color: #f8fafc;
+}
+
+.layout[data-theme='spotlight'] {
+  --textbook-accent: var(--color-orange-500);
+  --textbook-header-to: var(--color-orange-500);
 }
 
 .header {
@@ -10,8 +20,8 @@
   color: white;
   background-image: linear-gradient(
     to bottom right,
-    var(--color-green-600) 0%,
-    var(--color-emerald-500) 100%
+    var(--textbook-header-from) 0%,
+    var(--textbook-header-to) 100%
   );
 }
 
