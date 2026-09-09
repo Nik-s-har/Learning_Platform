@@ -10,8 +10,8 @@ import '../../../styles/color.css';
 const lesson = alphabetCourseData[0];
 const steps = lesson.steps ?? [];
 const videoStep = steps[0];
-const exerciseStep = steps[1];
-const stepState = steps.map(() => false);
+const wordwallStep = steps[1];
+const stepTitles = steps.map((item) => item.title);
 
 const meta: Meta<LessonProps> = {
   title: 'Layout/Lesson',
@@ -29,9 +29,9 @@ const meta: Meta<LessonProps> = {
     ),
   ],
   argTypes: {
-    type: { control: 'radio', options: ['video', 'exercise'] },
-    src: { control: false },
+    step: { control: false },
     onComplete: { action: 'completed' },
+    onPassed: { action: 'passed' },
   },
 };
 
@@ -41,19 +41,36 @@ type Story = StoryObj<LessonProps>;
 export const VideoStep: Story = {
   args: {
     lessonId: lesson.id,
-    stepState,
-    type: videoStep.type,
-    src: videoFile,
-    aboutLesson: videoStep.aboutLesson,
+    stepTitles,
+    activeStep: 0,
+    step: { ...videoStep, type: 'video', src: videoFile },
   },
 };
 
-export const ExerciseStep: Story = {
+export const WordwallStep: Story = {
   args: {
     lessonId: lesson.id,
-    stepState,
-    type: exerciseStep.type,
-    src: exerciseStep.src,
-    aboutLesson: exerciseStep.aboutLesson,
+    stepTitles,
+    activeStep: 1,
+    step: wordwallStep,
+  },
+};
+
+/** Встроенное упражнение как шаг урока — заголовок рисует ExerciseShell. */
+export const ExerciseStep: Story = {
+  args: {
+    title: 'Personality adjectives',
+    stepTitles: ['Видео 1', 'Карточки'],
+    activeStep: 1,
+    step: {
+      title: 'Карточки',
+      type: 'exercise',
+      engine: 'flashcards',
+      aboutLesson: 'Нажми на карточку, чтобы увидеть перевод',
+      cards: [
+        { id: 'kind', front: 'kind', back: 'добрый', speech: ['kind'] },
+        { id: 'clever', front: 'clever', back: 'умный', speech: ['clever'] },
+      ],
+    },
   },
 };

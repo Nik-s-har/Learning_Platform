@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.step {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  background-color: white;
+  color: var(--color-slate-500);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.step:disabled {
+  cursor: default;
+}
+
+.step:hover:not(:disabled),
+.step:focus-visible {
+  transform: translateY(-1px);
+  border-color: var(--color-sky-300);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 12%);
+}
+
+.step:focus-visible {
+  outline: 3px solid var(--color-sky-800);
+  outline-offset: 2px;
+}
+
+/* Единственное состояние: где ученик находится сейчас. */
+.stepActive {
+  background-color: var(--base-color);
+  border-color: var(--base-color);
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .container {
+    gap: 6px;
+  }
+
+  .step {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+}

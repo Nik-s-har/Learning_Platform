@@ -24,22 +24,13 @@ export function LessonPlayer({
   nextLessonHref,
 }: LessonPlayerProps) {
   const [currentStep, setCurrentStep] = useState(0);
-  const [stepState, setStepState] = useState<boolean[]>(() =>
-    Array(steps.length).fill(false),
-  );
 
   if (steps.length === 0) return null;
 
   const activeStep = Math.min(currentStep, steps.length - 1);
-  const { type, src, aboutLesson } = steps[activeStep];
   const isLastStep = activeStep === steps.length - 1;
 
   const handleComplete = () => {
-    setStepState((prev) => {
-      const updated = [...prev];
-      updated[activeStep] = true;
-      return updated;
-    });
     if (!isLastStep) {
       setCurrentStep((prev) => Math.min(prev + 1, steps.length - 1));
     }
@@ -55,11 +46,9 @@ export function LessonPlayer({
     <Lesson
       lessonId={lessonId}
       title={title}
-      stepState={stepState}
+      stepTitles={steps.map((item) => item.title)}
       activeStep={activeStep}
-      type={type}
-      src={src}
-      aboutLesson={aboutLesson}
+      step={steps[activeStep]}
       onComplete={handleComplete}
       onSelectStep={handleSelectStep}
       courseMapHref={courseMapHref}
