@@ -6,10 +6,6 @@
   text-align: center;
   background-color: var(--color-sky-500);
   padding-block: 96px;
-}
-
-.layout h2,
-.layout p {
   color: white;
 }
 

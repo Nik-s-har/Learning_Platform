@@ -12,6 +12,9 @@ function Header() {
             <NavLink to="/">Главная</NavLink>
           </li>
           <li className={styles.menuItem}>
+            <NavLink to="/starlight">Все для Starlight</NavLink>
+          </li>
+          <li className={styles.menuItem}>
             <NavLink to="/alphabet/starlight">Вводный курс к Starlight</NavLink>
           </li>
           <li className={styles.menuItem}>

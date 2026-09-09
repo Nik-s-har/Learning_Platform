@@ -6,7 +6,10 @@ import ExerciseLesson from '@ui/ExerciseLesson';
 import styles from './Lesson.module.css';
 
 export interface LessonProps {
-  lessonId: number;
+  /** Печатается в шапке как «Урок {lessonId}», если не задан title. */
+  lessonId?: number;
+  /** Заголовок шапки — для тем учебника, у которых нет номера урока. */
+  title?: string;
   stepState: boolean[];
   activeStep?: number;
   type: 'video' | 'exercise';
@@ -25,6 +28,7 @@ function Lesson(props: LessonProps) {
   const navigate = useNavigate();
   const {
     lessonId,
+    title,
     stepState,
     activeStep,
     type,
@@ -91,7 +95,7 @@ function Lesson(props: LessonProps) {
           activeStep={activeStep}
           onSelectStep={onSelectStep}
         />
-        <h3>Урок {lessonId}</h3>
+        <h3>{title ?? `Урок ${lessonId}`}</h3>
       </header>
       {lessonContent[type]}
     </main>

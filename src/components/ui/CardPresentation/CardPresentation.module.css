@@ -13,10 +13,6 @@
   padding: 32px;
 }
 
-.container p {
-  color: white;
-}
-
 @media (max-width: 767px) {
   .container {
     width: 100%;

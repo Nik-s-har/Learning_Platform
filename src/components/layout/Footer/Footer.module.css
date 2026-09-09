@@ -10,10 +10,6 @@
   margin-block-end: 16px;
 }
 
-.layout p {
-  color: var(--color-slate-400);
-}
-
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -59,17 +55,17 @@
 }
 
 .menu a {
-    color: var(--color-slate-400);
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: var(--color-slate-400);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .menu a:hover {
-    color: white;
+  color: white;
 }
 
-.contact { 
-    /* grid-area: Contact;  */
+.contact {
+  /* grid-area: Contact;  */
 }
 
 .contactsList {

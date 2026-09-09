@@ -33,6 +33,7 @@
       "@alphabet/*": ["./src/courses/alphabet/*"],
       "@exercises/*": ["./src/exercises/*"],
       "@trainers/*": ["./src/trainers/*"],
+      "@textbooks/*": ["./src/textbooks/*"],
       "@irregular/*": ["./src/trainers/irregularVerbs/*"],
       "@styles/*": ["./src/styles/*"],
       "@lib/*": ["./src/lib/*"],

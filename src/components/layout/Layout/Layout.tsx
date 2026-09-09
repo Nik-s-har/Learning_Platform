@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import styles from './Layout.module.css';
 
 const YANDEX_METRIKA_ID = 110517675;
 
@@ -16,11 +17,13 @@ function Layout() {
   }, [pathname]);
 
   return (
-    <>
+    <div className={styles.layout}>
       <Header />
-      <Outlet />
+      <div className={styles.content}>
+        <Outlet />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
