@@ -26,6 +26,7 @@ const meta: Meta<ButtonProps> = {
         'greyBlue',
         'slateSlate',
         'greenWhite',
+        'indigoWhite',
       ],
     },
     children: { control: 'text' },

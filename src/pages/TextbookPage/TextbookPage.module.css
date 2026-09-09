@@ -8,8 +8,8 @@
 }
 
 .layout[data-theme='spotlight'] {
-  --textbook-accent: var(--color-orange-500);
-  --textbook-header-to: var(--color-orange-500);
+  --textbook-accent: var(--color-indigo-muted);
+  --textbook-header-to: var(--color-violet-muted);
 }
 
 .header {

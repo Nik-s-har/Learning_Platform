@@ -35,7 +35,7 @@ export function ModuleRow({
 
   const title = (
     <>
-      <span className={styles.badge}>{module.id}</span>
+      <span className={styles.badge}>{module.badge ?? module.id}</span>
       <span className={styles.moduleTitle}>{module.title}</span>
     </>
   );

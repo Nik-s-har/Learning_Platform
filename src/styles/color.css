@@ -36,4 +36,8 @@
   --color-orange-50: oklch(98% 0.016 73.684);
   --color-orange-100: oklch(95.4% 0.038 75.164);
   --color-orange-500: oklch(70.5% 0.213 47.604);
+  /* Приглушённые индиго/фиолетовый темы Spotlight: хрома срезана
+     относительно indigo-600 / violet-500, светлота держит контраст с белым. */
+  --color-indigo-muted: oklch(50% 0.17 278);
+  --color-violet-muted: oklch(60% 0.16 292);
 }

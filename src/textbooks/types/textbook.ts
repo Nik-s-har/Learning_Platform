@@ -33,8 +33,13 @@ export interface TopicData {
 }
 
 export interface ModuleData {
-  /** номер в цветном бейдже, уникален внутри класса */
+  /**
+   * Идентификатор модуля: сегмент URL и часть ключа прогресса.
+   * Уникален внутри класса. 0 зарезервирован за вступительным блоком Starter.
+   */
   id: number;
+  /** Что показывать в бейдже вместо номера: 'S' у Starter. Одна-две буквы. */
+  badge?: string;
   title: string;
   accent: ModuleAccent;
   topics: Record<TopicCategory, TopicData[]>;

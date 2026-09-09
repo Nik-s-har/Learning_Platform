@@ -29,3 +29,19 @@ export const Default: Story = {
 export const SingleModule: Story = {
   args: { modules: starlightGrade4.modules.slice(0, 1) },
 };
+
+/** Вступительный блок: id 0, в бейдже буква вместо номера. */
+export const WithStarter: Story = {
+  args: {
+    modules: [
+      {
+        ...starlightGrade4.modules[0],
+        id: 0,
+        badge: 'S',
+        title: 'Starter',
+        accent: 'pink',
+      },
+      ...starlightGrade4.modules,
+    ],
+  },
+};

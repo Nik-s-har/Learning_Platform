@@ -91,8 +91,8 @@
   border-color: var(--color-green-500);
 }
 
-.orangeWhite {
-  background-color: var(--color-orange-500);
+.indigoWhite {
+  background-color: var(--color-indigo-muted);
   color: white;
-  border-color: var(--color-orange-500);
+  border-color: var(--color-indigo-muted);
 }

@@ -13,7 +13,7 @@ const GRADES = [2, 3, 4, 5, 6, 7, 8, 9];
 /** Цвет активной кнопки класса. Остальные цвета темы — в [data-theme] CSS. */
 const SELECTED_SCHEME: Record<TextbookTheme, ButtonProps['colorScheme']> = {
   starlight: 'greenWhite',
-  spotlight: 'orangeWhite',
+  spotlight: 'indigoWhite',
 };
 
 export interface TextbookPageProps {
@@ -62,7 +62,7 @@ export function TextbookPage({ slug }: TextbookPageProps) {
       </nav>
 
       <div className={styles.content}>
-        {grade ? (
+        {grade && (
           <ModuleTable
             modules={grade.modules}
             topicHref={(moduleId, topic) =>
@@ -71,10 +71,6 @@ export function TextbookPage({ slug }: TextbookPageProps) {
                 : undefined
             }
           />
-        ) : (
-          <p className={styles.empty}>
-            Для этого класса материалы ещё готовятся.
-          </p>
         )}
       </div>
     </main>
